@@ -19,61 +19,113 @@ st.set_page_config(
 # -------------------------------------------------------------------
 # CUSTOM CSS STYLE (FIXED TEXT CONTRAST & DARK THEME)
 # -------------------------------------------------------------------
+# -------------------------------------------------------------------
+# CUSTOM CSS STYLE (FIXED TEXT CONTRAST & DARK THEME)
+# -------------------------------------------------------------------
 st.markdown("""
 <style>
-    /* 1. Paksa Background Utama & Teks Utama */
-    .stApp {
+    @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
+
+    /* 1. Global Background & Universal Text Color Force */
+    html, body, [class*="css"], .stApp {
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
         background-color: #0b0f19 !important;
+        color: #f8fafc !important;
     }
 
-    /* 2. PAKSA SELURUH TEKS MARKDOWN BERWARNA PUTIH TAJAM */
-    [data-testid="stMarkdownContainer"] p,
-    [data-testid="stMarkdownContainer"] span,
-    [data-testid="stMarkdownContainer"] li,
-    [data-testid="stMarkdownContainer"] h1,
-    [data-testid="stMarkdownContainer"] h2,
-    [data-testid="stMarkdownContainer"] h3,
-    [data-testid="stMarkdownContainer"] div {
-        color: #ffffff !important;
-        font-size: 1rem !important;
+    /* Paksa seluruh paragraf, teks, dan header berwarna terang */
+    .stApp p, .stApp span, .stApp label, .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp div {
+        color: #f8fafc !important;
     }
 
-    /* 3. Perbaikan Teks Sidebar */
-    section[data-testid="stSidebar"] [data-testid="stMarkdownContainer"] * {
-        color: #f1f5f9 !important;
+    /* 2. Header Box Styling */
+    .header-card {
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        padding: 24px 30px;
+        border-radius: 16px;
+        border: 1px solid #334155;
+        margin-bottom: 25px;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+    }
+    
+    .header-title {
+        font-size: 1.75rem;
+        font-weight: 700;
+        color: #60a5fa !important;
+        margin: 0 0 6px 0;
+    }
+    
+    .header-subtitle {
+        color: #cbd5e1 !important;
+        font-size: 0.95rem;
+        margin: 0;
     }
 
-    /* 4. Chat Bubble User (Biru Slate) */
-    [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
-        background-color: #1e293b !important;
-        border: 1px solid #3b82f6 !important;
-    }
-
-    /* 5. Chat Bubble Bot (Gelap Navy) */
-    [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]) {
+    /* 3. Sidebar Styling & Text */
+    section[data-testid="stSidebar"] {
         background-color: #0f172a !important;
+        border-right: 1px solid #1e293b !important;
+    }
+
+    section[data-testid="stSidebar"] * {
+        color: #e2e8f0 !important;
+    }
+
+    /* 4. Chat Bubble Container & Text Contrast Fix */
+    [data-testid="stChatMessage"] {
+        border-radius: 14px !important;
+        padding: 16px 20px !important;
+        margin-bottom: 12px !important;
         border: 1px solid #334155 !important;
     }
 
-    /* 6. Perbaikan Input Chat Box (Placeholder & Teks yang Diketik) */
-    .stChatInput textarea {
+    /* Memastikan teks isi chat berwarna putih terang */
+    [data-testid="stChatMessage"] p, 
+    [data-testid="stChatMessage"] span, 
+    [data-testid="stChatMessage"] div {
         color: #ffffff !important;
-    }
-    .stChatInput textarea::placeholder {
-        color: #94a3b8 !important;
-    }
-    .stChatInput > div {
-        background-color: #1e293b !important;
-        border: 1px solid #475569 !important;
+        font-size: 0.98rem !important;
+        line-height: 1.6 !important;
     }
 
-    /* Header Box Custom */
-    .header-card {
-        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
-        padding: 20px 24px;
-        border-radius: 16px;
-        border: 1px solid #334155;
-        margin-bottom: 20px;
+    /* User Chat Bubble (Biru Slate) */
+    [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
+        background-color: #1e293b !important;
+        border-left: 4px solid #3b82f6 !important;
+    }
+
+    /* Assistant Chat Bubble (Navy Dark) */
+    [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]) {
+        background-color: #0f172a !important;
+        border-left: 4px solid #10b981 !important;
+    }
+
+    /* 5. Input Text Chat Fix */
+    .stChatInput textarea {
+        color: #ffffff !important;
+        background-color: #1e293b !important;
+    }
+    
+    .stChatInput > div {
+        border: 1px solid #475569 !important;
+        background-color: #1e293b !important;
+    }
+
+    /* 6. Button Styling */
+    .stButton > button {
+        width: 100%;
+        border-radius: 10px !important;
+        background: #2563eb !important;
+        color: #ffffff !important;
+        border: none !important;
+        font-weight: 600 !important;
+        padding: 10px 16px !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .stButton > button:hover {
+        background: #3b82f6 !important;
+        transform: translateY(-2px) !important;
     }
 </style>
 """, unsafe_allow_html=True)
