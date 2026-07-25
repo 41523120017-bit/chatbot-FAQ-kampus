@@ -1,0 +1,34 @@
+{
+  "mahasiswa": {
+    "41523120017": {
+      "nama": "Indra Ariea Kusuma",
+      "prodi": "Teknik Informatika",
+      "semester": 5
+    },
+    "41520120027": {
+      "nama": "Akbar Firmansyah",
+      "prodi": "Sistem Informasi",
+      "semester": 3
+    },
+    "41521120043": {
+      "nama": "Rizka Salsabila",
+      "prodi": "Teknik Informatika",
+      "semester": 6
+    }
+  },
+  "katalog_matkul": {
+    "Teknik Informatika": [
+      {"id": "1", "kode": "W152500028", "nama": "Natural Language Processing", "sks": 3, "harga_sks": 300000},
+      {"id": "2", "kode": "W152500012", "nama": "Pengembangan Aplikasi Web", "sks": 3, "harga_sks": 300000},
+      {"id": "3", "kode": "W152500015", "nama": "Kecerdasan Buatan (AI)", "sks": 3, "harga_sks": 300000},
+      {"id": "4", "kode": "W152500020", "nama": "Manajemen Basis Data", "sks": 3, "harga_sks": 300000},
+      {"id": "5", "kode": "U001700008", "nama": "Kewirausahaan III", "sks": 2, "harga_sks": 300000}
+    ],
+    "Sistem Informasi": [
+      {"id": "1", "kode": "SI15250001", "nama": "Algoritma & Pemrograman", "sks": 4, "harga_sks": 300000},
+      {"id": "2", "kode": "SI15250002", "nama": "Analisis Sistem Informasi", "sks": 3, "harga_sks": 300000},
+      {"id": "3", "kode": "SI15250003", "nama": "Manajemen Proyek TI", "sks": 3, "harga_sks": 300000}
+    ]
+  },
+  "biaya_pokok_bop": 1500000
+}
