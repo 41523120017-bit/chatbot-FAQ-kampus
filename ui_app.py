@@ -152,13 +152,13 @@ with st.sidebar:
     st.markdown("---")
 
     st.markdown("<h4 style='color:#0f172a;'>⚡ Pertanyaan Cepat</h4>", unsafe_allow_html=True)
-    if st.button("📝 Cek KRS & Matkul"):
+    if st.button("Cek KRS & Matkul"):
         st.session_state.quick_input = "bagaimana cara pengisian krs?"
-    if st.button("📅 Jadwal UTS & UAS"):
+    if st.button("Jadwal UTS & UAS"):
         st.session_state.quick_input = "dimana liat jadwal uts dan uas?"
-    if st.button("💳 Cara Bayar UKT"):
+    if st.button("Cara Bayar UKT"):
         st.session_state.quick_input = "sy mau bayar ukt lewat mandiri gmna"
-    if st.button("🎓 Info Beasiswa"):
+    if st.button("Info Beasiswa"):
         st.session_state.quick_input = "apa saja syarat mendaftar beasiswa?"
 
     st.markdown("---")
