@@ -18,119 +18,113 @@ st.set_page_config(
 # -------------------------------------------------------------------
 # 2. ADVANCED CUSTOM CSS (GLASSMORPHISM & MODERN DARK THEME)
 # -------------------------------------------------------------------
+# -------------------------------------------------------------------
+# CUSTOM CSS STYLE (FIXED TEXT CONTRAST & DARK THEME)
+# -------------------------------------------------------------------
 st.markdown("""
 <style>
-    /* Import Google Fonts */
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-    html, body, [class*="css"] {
-        font-family: 'Plus Jakarta Sans', sans-serif;
+    /* 1. Global Background & Universal Text Color Force */
+    html, body, [class*="css"], .stApp {
+        font-family: 'Plus Jakarta Sans', sans-serif !important;
+        background-color: #0b0f19 !important;
+        color: #f8fafc !important;
     }
 
-    /* Main Container Background */
-    .stApp {
-        background: #090d16;
-        color: #f1f5f9;
+    /* Paksa seluruh paragraf, teks, dan header berwarna terang */
+    .stApp p, .stApp span, .stApp label, .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp div {
+        color: #f8fafc !important;
     }
 
-    /* Header Banner Styling */
+    /* 2. Header Box Styling */
     .header-card {
-        background: linear-gradient(135deg, rgba(30, 41, 59, 0.7) 0%, rgba(15, 23, 42, 0.9) 100%);
-        backdrop-filter: blur(12px);
-        -webkit-backdrop-filter: blur(12px);
+        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
         padding: 24px 30px;
-        border-radius: 20px;
-        border: 1px solid rgba(255, 255, 255, 0.08);
-        box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.5);
+        border-radius: 16px;
+        border: 1px solid #334155;
         margin-bottom: 25px;
+        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
     }
     
     .header-title {
         font-size: 1.75rem;
         font-weight: 700;
-        background: linear-gradient(90deg, #60a5fa 0%, #3b82f6 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
+        color: #60a5fa !important;
         margin: 0 0 6px 0;
     }
     
     .header-subtitle {
-        color: #94a3b8;
+        color: #cbd5e1 !important;
         font-size: 0.95rem;
         margin: 0;
     }
 
-    /* Sidebar Styling */
+    /* 3. Sidebar Styling & Text */
     section[data-testid="stSidebar"] {
         background-color: #0f172a !important;
-        border-right: 1px solid rgba(255, 255, 255, 0.06);
+        border-right: 1px solid #1e293b !important;
     }
 
-    /* Chat Message Bubble Customization */
-    [data-testid="stChatMessage"] {
-        border-radius: 16px !important;
-        padding: 16px 20px !important;
-        margin-bottom: 14px !important;
-        border: 1px solid rgba(255, 255, 255, 0.05) !important;
-        box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+    section[data-testid="stSidebar"] * {
+        color: #e2e8f0 !important;
     }
-    
-    /* User Chat Bubble */
+
+    /* 4. Chat Bubble Container & Text Contrast Fix */
+    [data-testid="stChatMessage"] {
+        border-radius: 14px !important;
+        padding: 16px 20px !important;
+        margin-bottom: 12px !important;
+        border: 1px solid #334155 !important;
+    }
+
+    /* Memastikan teks isi chat berwarna putih terang */
+    [data-testid="stChatMessage"] p, 
+    [data-testid="stChatMessage"] span, 
+    [data-testid="stChatMessage"] div {
+        color: #ffffff !important;
+        font-size: 0.98rem !important;
+        line-height: 1.6 !important;
+    }
+
+    /* User Chat Bubble (Biru Slate) */
     [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
         background-color: #1e293b !important;
         border-left: 4px solid #3b82f6 !important;
     }
 
-    /* Assistant Chat Bubble */
+    /* Assistant Chat Bubble (Navy Dark) */
     [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]) {
         background-color: #0f172a !important;
         border-left: 4px solid #10b981 !important;
     }
 
-    /* Quick Action Button Styling */
-    .stButton > button {
-        border-radius: 12px !important;
-        padding: 10px 16px !important;
-        background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%) !important;
+    /* 5. Input Text Chat Fix */
+    .stChatInput textarea {
         color: #ffffff !important;
-        border: 1px solid rgba(255, 255, 255, 0.1) !important;
-        font-weight: 600 !important;
-        font-size: 0.88rem !important;
-        transition: all 0.25s ease-in-out !important;
-    }
-
-    .stButton > button:hover {
-        transform: translateY(-2px) !important;
-        box-shadow: 0 8px 15px rgba(37, 99, 235, 0.35) !important;
-        background: linear-gradient(135deg, #3b82f6 0%, #2563eb 100%) !important;
-    }
-
-    /* Reset Button Styling */
-    .reset-btn > button {
-        background: rgba(239, 68, 68, 0.15) !important;
-        color: #f87171 !important;
-        border: 1px solid rgba(239, 68, 68, 0.3) !important;
+        background-color: #1e293b !important;
     }
     
-    .reset-btn > button:hover {
-        background: rgba(239, 68, 68, 0.3) !important;
-        box-shadow: 0 8px 15px rgba(239, 68, 68, 0.2) !important;
-    }
-
-    /* Input Chat Styling */
     .stChatInput > div {
-        border-radius: 16px !important;
-        border: 1px solid rgba(255, 255, 255, 0.12) !important;
+        border: 1px solid #475569 !important;
         background-color: #1e293b !important;
     }
 
-    /* Metric Cards in Sidebar */
-    .metric-card {
-        background: rgba(30, 41, 59, 0.5);
-        border: 1px solid rgba(255, 255, 255, 0.05);
-        padding: 12px;
-        border-radius: 12px;
-        margin-bottom: 8px;
+    /* 6. Button Styling */
+    .stButton > button {
+        width: 100%;
+        border-radius: 10px !important;
+        background: #2563eb !important;
+        color: #ffffff !important;
+        border: none !important;
+        font-weight: 600 !important;
+        padding: 10px 16px !important;
+        transition: all 0.2s ease !important;
+    }
+
+    .stButton > button:hover {
+        background: #3b82f6 !important;
+        transform: translateY(-2px) !important;
     }
 </style>
 """, unsafe_allow_html=True)
