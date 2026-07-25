@@ -16,116 +16,106 @@ st.set_page_config(
 )
 
 # -------------------------------------------------------------------
-# -------------------------------------------------------------------
-# CUSTOM CSS STYLE (FIXED TEXT CONTRAST & DARK THEME)
-# -------------------------------------------------------------------
-# -------------------------------------------------------------------
-# CUSTOM CSS STYLE (FIXED TEXT CONTRAST & DARK THEME)
+# 2. ULTRA HIGH-CONTRAST LIGHT THEME (CSS)
 # -------------------------------------------------------------------
 st.markdown("""
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
 
-    /* 1. Global Background & Universal Text Color Force */
+    /* Latar Belakang Utama & Font */
     html, body, [class*="css"], .stApp {
         font-family: 'Plus Jakarta Sans', sans-serif !important;
-        background-color: #0b0f19 !important;
-        color: #f8fafc !important;
+        background-color: #f8fafc !important;
+        color: #0f172a !important;
     }
 
-    /* Paksa seluruh paragraf, teks, dan header berwarna terang */
-    .stApp p, .stApp span, .stApp label, .stApp h1, .stApp h2, .stApp h3, .stApp h4, .stApp div {
-        color: #f8fafc !important;
+    /* Paksa Semua Teks Markdown Berwarna Hitam/Charcoal Tajam */
+    [data-testid="stMarkdownContainer"] p,
+    [data-testid="stMarkdownContainer"] span,
+    [data-testid="stMarkdownContainer"] li,
+    [data-testid="stMarkdownContainer"] h1,
+    [data-testid="stMarkdownContainer"] h2,
+    [data-testid="stMarkdownContainer"] h3,
+    [data-testid="stMarkdownContainer"] div {
+        color: #0f172a !important;
+        font-weight: 400 !important;
+        line-height: 1.6 !important;
     }
 
-    /* 2. Header Box Styling */
+    /* Header Banner Custom (Gradient Biru Kampus) */
     .header-card {
-        background: linear-gradient(135deg, #1e293b 0%, #0f172a 100%);
+        background: linear-gradient(135deg, #1e3a8a 0%, #2563eb 100%);
         padding: 24px 30px;
         border-radius: 16px;
-        border: 1px solid #334155;
         margin-bottom: 25px;
-        box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+        box-shadow: 0 10px 15px -3px rgba(37, 99, 235, 0.2);
     }
     
     .header-title {
         font-size: 1.75rem;
         font-weight: 700;
-        color: #60a5fa !important;
+        color: #ffffff !important;
         margin: 0 0 6px 0;
     }
     
     .header-subtitle {
-        color: #cbd5e1 !important;
+        color: #e0f2fe !important;
         font-size: 0.95rem;
         margin: 0;
     }
 
-    /* 3. Sidebar Styling & Text */
+    /* Sidebar Custom */
     section[data-testid="stSidebar"] {
-        background-color: #0f172a !important;
-        border-right: 1px solid #1e293b !important;
+        background-color: #ffffff !important;
+        border-right: 1px solid #e2e8f0 !important;
     }
 
-    section[data-testid="stSidebar"] * {
-        color: #e2e8f0 !important;
-    }
-
-    /* 4. Chat Bubble Container & Text Contrast Fix */
-    [data-testid="stChatMessage"] {
-        border-radius: 14px !important;
-        padding: 16px 20px !important;
-        margin-bottom: 12px !important;
-        border: 1px solid #334155 !important;
-    }
-
-    /* Memastikan teks isi chat berwarna putih terang */
-    [data-testid="stChatMessage"] p, 
-    [data-testid="stChatMessage"] span, 
-    [data-testid="stChatMessage"] div {
-        color: #ffffff !important;
-        font-size: 0.98rem !important;
-        line-height: 1.6 !important;
-    }
-
-    /* User Chat Bubble (Biru Slate) */
+    /* Chat Bubble User (Biru Muda Segar) */
     [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarUser"]) {
-        background-color: #1e293b !important;
-        border-left: 4px solid #3b82f6 !important;
+        background-color: #e0f2fe !important;
+        border: 1px solid #bae6fd !important;
+        border-radius: 14px !important;
+        padding: 14px 18px !important;
+        margin-bottom: 12px !important;
     }
 
-    /* Assistant Chat Bubble (Navy Dark) */
+    /* Chat Bubble Assistant (Putih Bersih dengan Border Shadow) */
     [data-testid="stChatMessage"]:has([data-testid="stChatMessageAvatarAssistant"]) {
-        background-color: #0f172a !important;
-        border-left: 4px solid #10b981 !important;
+        background-color: #ffffff !important;
+        border: 1px solid #e2e8f0 !important;
+        border-radius: 14px !important;
+        padding: 14px 18px !important;
+        margin-bottom: 12px !important;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.03) !important;
     }
 
-    /* 5. Input Text Chat Fix */
+    /* Input Chat Box Fix (Teks Hitam Tajam) */
     .stChatInput textarea {
-        color: #ffffff !important;
-        background-color: #1e293b !important;
+        color: #0f172a !important;
+        background-color: #ffffff !important;
     }
     
     .stChatInput > div {
-        border: 1px solid #475569 !important;
-        background-color: #1e293b !important;
+        background-color: #ffffff !important;
+        border: 2px solid #cbd5e1 !important;
+        border-radius: 12px !important;
     }
 
-    /* 6. Button Styling */
+    /* Button Custom */
     .stButton > button {
         width: 100%;
         border-radius: 10px !important;
-        background: #2563eb !important;
+        background-color: #2563eb !important;
         color: #ffffff !important;
         border: none !important;
         font-weight: 600 !important;
         padding: 10px 16px !important;
-        transition: all 0.2s ease !important;
+        transition: all 0.2s !important;
     }
 
     .stButton > button:hover {
-        background: #3b82f6 !important;
-        transform: translateY(-2px) !important;
+        background-color: #1d4ed8 !important;
+        transform: translateY(-1px) !important;
     }
 </style>
 """, unsafe_allow_html=True)
@@ -138,7 +128,7 @@ MODEL_PATH = 'intent_model.pkl'
 @st.cache_resource
 def load_model():
     if not os.path.exists(MODEL_PATH):
-        st.error(f"⚠️ Model '{MODEL_PATH}' tidak ditemukan. Silakan jalankan 'python train_eval.py' dulu.")
+        st.error(f"⚠️ Model '{MODEL_PATH}' tidak ditemukan. Jalankan 'python train_eval.py' terlebih dahulu.")
         st.stop()
     return joblib.load(MODEL_PATH)
 
@@ -149,22 +139,22 @@ if 'dialog_manager' not in st.session_state:
 
 if 'messages' not in st.session_state:
     st.session_state.messages = [
-        {"role": "assistant", "content": "👋 **Halo! Selamat Datang di SIAKAD AI Assistant.**\nAda yang bisa saya bantu hari ini? Anda bisa menanyakan info **KRS, Jadwal Ujian, UKT, atau Beasiswa**."}
+        {"role": "assistant", "content": "👋 **Selamat Datang di SIAKAD AI Assistant!**\nAda yang bisa saya bantu hari ini seputar **KRS, Jadwal Ujian, UKT, atau Beasiswa**?"}
     ]
 
 # -------------------------------------------------------------------
-# 4. SIDEBAR DASHBOARD & QUICK ACTIONS
+# 4. SIDEBAR
 # -------------------------------------------------------------------
 with st.sidebar:
     st.image("https://img.icons8.com/isometric/100/graduation-cap.png", width=65)
-    st.markdown("## **SIAKAD Bot**")
+    st.markdown("<h2 style='color:#0f172a; margin-top:0;'>SIAKAD Bot</h2>", unsafe_allow_html=True)
     st.caption("🟢 **Status:** Active & Ready")
     st.markdown("---")
 
-    st.markdown("### ⚡ **Aksi Cepat**")
+    st.markdown("<h4 style='color:#0f172a;'>⚡ Pertanyaan Cepat</h4>", unsafe_allow_html=True)
     if st.button("📝 Cek KRS & Matkul"):
         st.session_state.quick_input = "bagaimana cara pengisian krs?"
-    if st.button("📅 Jadwal Uts & Uas"):
+    if st.button("📅 Jadwal UTS & UAS"):
         st.session_state.quick_input = "dimana liat jadwal uts dan uas?"
     if st.button("💳 Cara Bayar UKT"):
         st.session_state.quick_input = "sy mau bayar ukt lewat mandiri gmna"
@@ -172,29 +162,12 @@ with st.sidebar:
         st.session_state.quick_input = "apa saja syarat mendaftar beasiswa?"
 
     st.markdown("---")
-    
-    # Tombol Reset Percakapan
-    st.markdown('<div class="reset-btn">', unsafe_allow_html=True)
     if st.button("🔄 Reset Sesi Chat"):
         st.session_state.messages = [
-            {"role": "assistant", "content": "👋 **Sesi telah diperbarui.** Silakan masukkan NIM Anda atau tanyakan informasi akademik."}
+            {"role": "assistant", "content": "👋 **Sesi telah diperbarui.** Silakan tanyakan informasi akademik Anda."}
         ]
         st.session_state.dialog_manager = DialogManager(model)
         st.rerun()
-    st.markdown('</div>', unsafe_allow_html=True)
-
-    st.markdown("---")
-    st.markdown("### 📊 **Info Sistem**")
-    st.markdown("""
-    <div class="metric-card">
-        <small style="color:#94a3b8;">Engine NLP</small><br>
-        <strong>TF-IDF + Logistic Regression</strong>
-    </div>
-    <div class="metric-card">
-        <small style="color:#94a3b8;">Database Target</small><br>
-        <strong>SIAKAD Local JSON (Realtime)</strong>
-    </div>
-    """, unsafe_allow_html=True)
 
 # -------------------------------------------------------------------
 # 5. HEADER UTAMA
@@ -202,51 +175,36 @@ with st.sidebar:
 st.markdown("""
 <div class="header-card">
     <div class="header-title">🎓 Pusat Layanan Informasi Akademik</div>
-    <div class="header-subtitle">Sistem Asisten Cerdas Terintegrasi SIAKAD & Modul Pengisian KRS Interaktif</div>
+    <div class="header-subtitle">Sistem Asisten Cerdas Terintegrasi SIAKAD & Modul Informasi Mahasiswa</div>
 </div>
 """, unsafe_allow_html=True)
 
 # -------------------------------------------------------------------
-# 6. CHAT HISTORY DISPLAY
+# 6. DISPLAY CHAT MESSAGES
 # -------------------------------------------------------------------
-chat_container = st.container()
-
-with chat_container:
-    for msg in st.session_state.messages:
-        avatar = "🤖" if msg["role"] == "assistant" else "👤"
-        with st.chat_message(msg["role"], avatar=avatar):
-            st.markdown(msg["content"])
+for msg in st.session_state.messages:
+    avatar = "🤖" if msg["role"] == "assistant" else "👤"
+    with st.chat_message(msg["role"], avatar=avatar):
+        st.markdown(msg["content"])
 
 # -------------------------------------------------------------------
-# 7. INPUT & PROCESSING LOGIC
+# 7. INPUT USER & LOGIC
 # -------------------------------------------------------------------
-user_input = st.chat_input("Ketik pertanyaan Anda di sini (contoh: 'cara isi krs', 'link portal')...")
+user_input = st.chat_input("Ketik pertanyaan Anda di sini...")
 
 if hasattr(st.session_state, 'quick_input') and st.session_state.quick_input:
     user_input = st.session_state.quick_input
     st.session_state.quick_input = None
 
 if user_input:
-    # Append & Display User Message
     st.session_state.messages.append({"role": "user", "content": user_input})
     with st.chat_message("user", avatar="👤"):
         st.markdown(user_input)
 
-    # Process via Dialog Manager
     bot_response = st.session_state.dialog_manager.process_message(user_input)
 
-    # Append & Display Bot Response
     st.session_state.messages.append({"role": "assistant", "content": bot_response})
     with st.chat_message("assistant", avatar="🤖"):
         st.markdown(bot_response)
-
-    # Logging ke chat_logs.json
-    log_entry = {
-        "timestamp": datetime.datetime.now().strftime("%Y-%m-%d %H:%M:%S"),
-        "user_input": user_input,
-        "bot_response": bot_response
-    }
-    with open("chat_logs.json", "a", encoding="utf-8") as f:
-        f.write(json.dumps(log_entry, ensure_ascii=False) + "\n")
 
     st.rerun()
