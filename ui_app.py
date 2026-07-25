@@ -180,16 +180,17 @@ st.markdown("""
 """, unsafe_allow_html=True)
 
 # -------------------------------------------------------------------
+# 6. DISPLAY CHAT MESSAGES (MENGGUNAKAN ROBOT BIRU NO. 3)
 # -------------------------------------------------------------------
-# 6. DISPLAY CHAT MESSAGES
-# -------------------------------------------------------------------
+BOT_AVATAR = "https://img.icons8.com/fluency/96/bot.png"
+
 for msg in st.session_state.messages:
-    avatar = "🤖" if msg["role"] == "assistant" else "👤"
+    avatar = BOT_AVATAR if msg["role"] == "assistant" else "👤"
     with st.chat_message(msg["role"], avatar=avatar):
         st.markdown(msg["content"])
 
 # -------------------------------------------------------------------
-# 7. INPUT USER & LOGIC
+# 7. INPUT USER & LOGIC (MENGGUNAKAN ROBOT BIRU NO. 3)
 # -------------------------------------------------------------------
 user_input = st.chat_input("Ketik pertanyaan Anda di sini...")
 
@@ -205,7 +206,7 @@ if user_input:
     bot_response = st.session_state.dialog_manager.process_message(user_input)
 
     st.session_state.messages.append({"role": "assistant", "content": bot_response})
-    with st.chat_message("assistant", avatar="🤖"):
+    with st.chat_message("assistant", avatar=BOT_AVATAR):
         st.markdown(bot_response)
 
     st.rerun()
