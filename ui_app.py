@@ -151,7 +151,7 @@ with st.sidebar:
     st.caption("🟢 **Status:** Active & Ready")
     st.markdown("---")
 
-    st.markdown("<h4 style='color:#0f172a;'>⚡ Pertanyaan Cepat</h4>", unsafe_allow_html=True)
+    st.markdown("<h4 style='color:#0f172a;'>Pertanyaan Cepat</h4>", unsafe_allow_html=True)
     if st.button("Cek KRS & Matkul"):
         st.session_state.quick_input = "bagaimana cara pengisian krs?"
     if st.button("Jadwal UTS & UAS"):
