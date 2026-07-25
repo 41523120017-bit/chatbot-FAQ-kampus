@@ -181,21 +181,15 @@ st.markdown("""
 
 # -------------------------------------------------------------------
 # -------------------------------------------------------------------
-# DEFINE AVATAR
-# -------------------------------------------------------------------
-BOT_AVATAR = "bot_avatar.png"  # Path file gambar robot Anda
-USER_AVATAR = "👤"              # Emoji atau path gambar untuk user
-
-# -------------------------------------------------------------------
-# DISPLAY CHAT MESSAGES
+# 6. DISPLAY CHAT MESSAGES
 # -------------------------------------------------------------------
 for msg in st.session_state.messages:
-    avatar = BOT_AVATAR if msg["role"] == "assistant" else USER_AVATAR
+    avatar = "🤖" if msg["role"] == "assistant" else "👤"
     with st.chat_message(msg["role"], avatar=avatar):
         st.markdown(msg["content"])
 
 # -------------------------------------------------------------------
-# INPUT USER & PROCESSING
+# 7. INPUT USER & LOGIC
 # -------------------------------------------------------------------
 user_input = st.chat_input("Ketik pertanyaan Anda di sini...")
 
@@ -204,17 +198,14 @@ if hasattr(st.session_state, 'quick_input') and st.session_state.quick_input:
     st.session_state.quick_input = None
 
 if user_input:
-    # 1. Pesan User
     st.session_state.messages.append({"role": "user", "content": user_input})
-    with st.chat_message("user", avatar=USER_AVATAR):
+    with st.chat_message("user", avatar="👤"):
         st.markdown(user_input)
 
-    # 2. Proses Balasan
     bot_response = st.session_state.dialog_manager.process_message(user_input)
 
-    # 3. Pesan Assistant (Menggunakan Gambar Robot)
     st.session_state.messages.append({"role": "assistant", "content": bot_response})
-    with st.chat_message("assistant", avatar=BOT_AVATAR):
+    with st.chat_message("assistant", avatar="🤖"):
         st.markdown(bot_response)
 
     st.rerun()
