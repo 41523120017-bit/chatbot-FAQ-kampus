@@ -1,0 +1,37 @@
+{
+  "/Users/koala/Kuliah/UAS_NLP/chatbot-FAQ-kampus-main/dataset_faq.json": {
+    "mtime": 1785017503.0,
+    "ast_hash": "fdef6611d879d791864a44246bd70c85",
+    "semantic_hash": "fdef6611d879d791864a44246bd70c85"
+  },
+  "/Users/koala/Kuliah/UAS_NLP/chatbot-FAQ-kampus-main/db_krs.json": {
+    "mtime": 1785017503.0,
+    "ast_hash": "9a38e09c812155f4f9ba054b3eac53f0",
+    "semantic_hash": "9a38e09c812155f4f9ba054b3eac53f0"
+  },
+  "/Users/koala/Kuliah/UAS_NLP/chatbot-FAQ-kampus-main/dialog_manager.py": {
+    "mtime": 1785017503.0,
+    "ast_hash": "346b38a27cb55732adb3148fca2b1eb0",
+    "semantic_hash": "346b38a27cb55732adb3148fca2b1eb0"
+  },
+  "/Users/koala/Kuliah/UAS_NLP/chatbot-FAQ-kampus-main/preprocessing.py": {
+    "mtime": 1785017503.0,
+    "ast_hash": "806bf985433ae7aaf6eb28dc2072d832",
+    "semantic_hash": "806bf985433ae7aaf6eb28dc2072d832"
+  },
+  "/Users/koala/Kuliah/UAS_NLP/chatbot-FAQ-kampus-main/train_eval.py": {
+    "mtime": 1785017503.0,
+    "ast_hash": "4fdd38ec08bffbd65bd06f66e786a9b7",
+    "semantic_hash": "4fdd38ec08bffbd65bd06f66e786a9b7"
+  },
+  "/Users/koala/Kuliah/UAS_NLP/chatbot-FAQ-kampus-main/ui_app.py": {
+    "mtime": 1785017503.0,
+    "ast_hash": "fe1e2a9dba1a7fee9d10d1095a6aa933",
+    "semantic_hash": "fe1e2a9dba1a7fee9d10d1095a6aa933"
+  },
+  "/Users/koala/Kuliah/UAS_NLP/chatbot-FAQ-kampus-main/requirements.txt": {
+    "mtime": 1785017503.0,
+    "ast_hash": "41567f434374810cdfc598f69546a676",
+    "semantic_hash": "41567f434374810cdfc598f69546a676"
+  }
+}

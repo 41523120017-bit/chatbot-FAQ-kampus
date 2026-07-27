@@ -1,0 +1,16 @@
+Automated test results — 2026-07-27
+
+Command: python3 -m pytest -q
+Result: 26 passed, 2 warnings in 11.25s
+
+Coverage of project requirements:
+- Dataset size, uniqueness, and intent balance
+- Preprocessing behavior
+- Training, prediction, and evaluation artifact generation
+- Slot extraction and multi-turn dialog states
+- Confirmation and cancellation flows
+- CSV logging and NIM masking
+- CLI and Streamlit smoke tests
+- Required report and slide deliverables
+
+Warnings are third-party Python deprecation warnings from google._upb and do not affect project behavior.

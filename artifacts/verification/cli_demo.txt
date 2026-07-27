@@ -1,0 +1,18 @@
+CLI smoke test — 2026-07-27
+
+Skenario:
+1. Pengguna: saya ingin mengisi krs
+2. Pengguna: 41523120017
+3. Pengguna: 1, 2
+4. Pengguna: ya
+
+Hasil:
+- Intent awal: pendaftaran_krs (confidence 84,9%)
+- State: IDLE -> WAITING_FOR_NIM -> SELECTING_MATKUL -> WAITING_CONFIRMATION -> IDLE
+- Data mahasiswa demo ditemukan: Indra Ariea Kusuma, Teknik Informatika, semester 5
+- Mata kuliah: Natural Language Processing dan Pengembangan Aplikasi Web
+- Total: 6 SKS
+- Estimasi tagihan demo: Rp 3.300.000
+- Respons akhir: KRS berhasil dikunci
+- Status: LULUS
+

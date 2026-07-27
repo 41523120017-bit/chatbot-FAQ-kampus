@@ -1,0 +1,27 @@
+{
+  "dataset_size": 250,
+  "train_size": 200,
+  "test_size": 50,
+  "random_state": 42,
+  "accuracy": 0.98,
+  "macro_precision": 0.9818181818181818,
+  "macro_recall": 0.9800000000000001,
+  "macro_f1": 0.9799498746867167,
+  "weighted_precision": 0.9818181818181819,
+  "weighted_recall": 0.98,
+  "weighted_f1": 0.9799498746867168,
+  "labels": [
+    "akses_portal",
+    "jadwal_ujian",
+    "pembayaran_ukt",
+    "pendaftaran_krs",
+    "syarat_beasiswa"
+  ],
+  "intent_distribution": {
+    "akses_portal": 50,
+    "jadwal_ujian": 50,
+    "pembayaran_ukt": 50,
+    "pendaftaran_krs": 50,
+    "syarat_beasiswa": 50
+  }
+}

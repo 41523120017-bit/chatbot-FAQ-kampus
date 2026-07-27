@@ -1,0 +1,2 @@
+text,clean_text,actual_intent,predicted_intent
+saya ingin daftar mata kuliah semester depan,saya ingin daftar mata kuliah semester depan,pendaftaran_krs,syarat_beasiswa

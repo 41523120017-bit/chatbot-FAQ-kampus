@@ -1,0 +1,486 @@
+{
+  "directed": false,
+  "multigraph": false,
+  "graph": {
+    "hyperedges": [
+      {
+        "id": "requirements_python_runtime_dependency_set",
+        "label": "Python Runtime Dependency Set",
+        "nodes": [
+          "requirements_streamlit",
+          "requirements_joblib",
+          "requirements_numpy",
+          "requirements_scikit_learn"
+        ],
+        "relation": "form",
+        "confidence": "EXTRACTED",
+        "confidence_score": 1.0,
+        "source_file": "requirements.txt"
+      }
+    ]
+  },
+  "nodes": [
+    {
+      "label": "dialog_manager.py",
+      "file_type": "code",
+      "source_file": "dialog_manager.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "dialog_manager",
+      "community": 1,
+      "norm_label": "dialog_manager.py"
+    },
+    {
+      "label": "DialogManager",
+      "file_type": "code",
+      "source_file": "dialog_manager.py",
+      "source_location": "L7",
+      "_origin": "ast",
+      "id": "dialog_manager_dialogmanager",
+      "community": 0,
+      "norm_label": "dialogmanager"
+    },
+    {
+      "label": ".__init__()",
+      "file_type": "code",
+      "source_file": "dialog_manager.py",
+      "source_location": "L8",
+      "_origin": "ast",
+      "id": "dialog_manager_dialogmanager_init",
+      "community": 0,
+      "norm_label": ".__init__()"
+    },
+    {
+      "label": "._load_db()",
+      "file_type": "code",
+      "source_file": "dialog_manager.py",
+      "source_location": "L14",
+      "_origin": "ast",
+      "id": "dialog_manager_dialogmanager_load_db",
+      "community": 0,
+      "norm_label": "._load_db()"
+    },
+    {
+      "label": ".reset_state()",
+      "file_type": "code",
+      "source_file": "dialog_manager.py",
+      "source_location": "L21",
+      "_origin": "ast",
+      "id": "dialog_manager_dialogmanager_reset_state",
+      "community": 0,
+      "norm_label": ".reset_state()"
+    },
+    {
+      "label": ".process_message()",
+      "file_type": "code",
+      "source_file": "dialog_manager.py",
+      "source_location": "L26",
+      "_origin": "ast",
+      "id": "dialog_manager_dialogmanager_process_message",
+      "community": 0,
+      "norm_label": ".process_message()"
+    },
+    {
+      "label": "Membaca database JSON secara real-time",
+      "file_type": "rationale",
+      "source_file": "dialog_manager.py",
+      "source_location": "L15",
+      "_origin": "ast",
+      "id": "dialog_manager_rationale_15",
+      "community": 0,
+      "norm_label": "membaca database json secara real-time"
+    },
+    {
+      "label": "Reset alur percakapan ke kondisi awal",
+      "file_type": "rationale",
+      "source_file": "dialog_manager.py",
+      "source_location": "L22",
+      "_origin": "ast",
+      "id": "dialog_manager_rationale_22",
+      "community": 0,
+      "norm_label": "reset alur percakapan ke kondisi awal"
+    },
+    {
+      "label": "preprocessing.py",
+      "file_type": "code",
+      "source_file": "preprocessing.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "preprocessing",
+      "community": 1,
+      "norm_label": "preprocessing.py"
+    },
+    {
+      "label": "preprocess_text()",
+      "file_type": "code",
+      "source_file": "preprocessing.py",
+      "source_location": "L24",
+      "_origin": "ast",
+      "id": "preprocessing_preprocess_text",
+      "community": 1,
+      "norm_label": "preprocess_text()"
+    },
+    {
+      "label": "train_eval.py",
+      "file_type": "code",
+      "source_file": "train_eval.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "train_eval",
+      "community": 1,
+      "norm_label": "train_eval.py"
+    },
+    {
+      "label": "train_and_evaluate()",
+      "file_type": "code",
+      "source_file": "train_eval.py",
+      "source_location": "L13",
+      "_origin": "ast",
+      "id": "train_eval_train_and_evaluate",
+      "community": 1,
+      "norm_label": "train_and_evaluate()"
+    },
+    {
+      "label": "ui_app.py",
+      "file_type": "code",
+      "source_file": "ui_app.py",
+      "source_location": "L1",
+      "_origin": "ast",
+      "id": "ui_app",
+      "community": 3,
+      "norm_label": "ui_app.py"
+    },
+    {
+      "label": "load_model()",
+      "file_type": "code",
+      "source_file": "ui_app.py",
+      "source_location": "L129",
+      "_origin": "ast",
+      "id": "ui_app_load_model",
+      "community": 3,
+      "norm_label": "load_model()"
+    },
+    {
+      "label": "Python Dependency Manifest",
+      "file_type": "document",
+      "source_file": "requirements.txt",
+      "source_location": null,
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_python_dependency_manifest",
+      "community": 2,
+      "norm_label": "python dependency manifest"
+    },
+    {
+      "label": "Streamlit",
+      "file_type": "concept",
+      "source_file": "requirements.txt",
+      "source_location": "line 1",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_streamlit",
+      "community": 2,
+      "norm_label": "streamlit"
+    },
+    {
+      "label": "Joblib",
+      "file_type": "concept",
+      "source_file": "requirements.txt",
+      "source_location": "line 2",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_joblib",
+      "community": 2,
+      "norm_label": "joblib"
+    },
+    {
+      "label": "NumPy",
+      "file_type": "concept",
+      "source_file": "requirements.txt",
+      "source_location": "line 3",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_numpy",
+      "community": 2,
+      "norm_label": "numpy"
+    },
+    {
+      "label": "scikit-learn",
+      "file_type": "concept",
+      "source_file": "requirements.txt",
+      "source_location": "line 4",
+      "source_url": null,
+      "captured_at": null,
+      "author": null,
+      "contributor": null,
+      "id": "requirements_scikit_learn",
+      "community": 2,
+      "norm_label": "scikit-learn"
+    }
+  ],
+  "links": [
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L7",
+      "weight": 1.0,
+      "source": "dialog_manager",
+      "target": "dialog_manager_dialogmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "dialog_manager",
+      "target": "preprocessing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "dialog_manager",
+      "target": "preprocessing_preprocess_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui_app.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "ui_app",
+      "target": "dialog_manager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L8",
+      "weight": 1.0,
+      "source": "dialog_manager_dialogmanager",
+      "target": "dialog_manager_dialogmanager_init",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L14",
+      "weight": 1.0,
+      "source": "dialog_manager_dialogmanager",
+      "target": "dialog_manager_dialogmanager_load_db",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L26",
+      "weight": 1.0,
+      "source": "dialog_manager_dialogmanager",
+      "target": "dialog_manager_dialogmanager_process_message",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "dialog_manager_dialogmanager",
+      "target": "dialog_manager_dialogmanager_reset_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "ui_app.py",
+      "source_location": "L6",
+      "weight": 1.0,
+      "source": "ui_app",
+      "target": "dialog_manager_dialogmanager",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L27",
+      "weight": 1.0,
+      "source": "dialog_manager_dialogmanager_process_message",
+      "target": "dialog_manager_dialogmanager_load_db",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "dialog_manager_rationale_15",
+      "target": "dialog_manager_dialogmanager_load_db",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L32",
+      "weight": 1.0,
+      "source": "dialog_manager_dialogmanager_process_message",
+      "target": "dialog_manager_dialogmanager_reset_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "rationale_for",
+      "confidence": "EXTRACTED",
+      "source_file": "dialog_manager.py",
+      "source_location": "L22",
+      "weight": 1.0,
+      "source": "dialog_manager_rationale_22",
+      "target": "dialog_manager_dialogmanager_reset_state",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "dialog_manager.py",
+      "source_location": "L28",
+      "weight": 1.0,
+      "source": "dialog_manager_dialogmanager_process_message",
+      "target": "preprocessing_preprocess_text"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "preprocessing.py",
+      "source_location": "L24",
+      "weight": 1.0,
+      "source": "preprocessing",
+      "target": "preprocessing_preprocess_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "train_eval.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "train_eval",
+      "target": "preprocessing",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "train_eval.py",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "train_eval",
+      "target": "preprocessing_preprocess_text",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "train_eval.py",
+      "source_location": "L13",
+      "weight": 1.0,
+      "source": "train_eval",
+      "target": "train_eval_train_and_evaluate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "ui_app.py",
+      "source_location": "L129",
+      "weight": 1.0,
+      "source": "ui_app",
+      "target": "ui_app_load_model",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": "line 2",
+      "weight": 1.0,
+      "source": "requirements_python_dependency_manifest",
+      "target": "requirements_joblib"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": "line 3",
+      "weight": 1.0,
+      "source": "requirements_python_dependency_manifest",
+      "target": "requirements_numpy"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": "line 4",
+      "weight": 1.0,
+      "source": "requirements_python_dependency_manifest",
+      "target": "requirements_scikit_learn"
+    },
+    {
+      "relation": "references",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt",
+      "source_location": "line 1",
+      "weight": 1.0,
+      "source": "requirements_python_dependency_manifest",
+      "target": "requirements_streamlit"
+    }
+  ],
+  "hyperedges": [
+    {
+      "id": "requirements_python_runtime_dependency_set",
+      "label": "Python Runtime Dependency Set",
+      "nodes": [
+        "requirements_streamlit",
+        "requirements_joblib",
+        "requirements_numpy",
+        "requirements_scikit_learn"
+      ],
+      "relation": "form",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "requirements.txt"
+    }
+  ]
+}

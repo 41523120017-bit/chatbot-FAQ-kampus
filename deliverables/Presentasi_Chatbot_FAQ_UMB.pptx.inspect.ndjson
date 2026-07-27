@@ -1,0 +1,386 @@
+{"kind":"deck","id":"pr/94v0eg","name":"Deck"}
+{"kind":"layout","layoutId":"03e4cfe3-4c7b-4df5-9f11-4e3569506c4b","name":"Master","type":"master"}
+{"kind":"layout","layoutId":"65285aec-c2d1-4ace-b107-0f7f7ccc51c8","name":"Title Slide","type":"title"}
+{"kind":"slide","id":"sl/0wab67","slide":1,"title":"PROJECT AKHIR • NATURAL LANGUAGE PROCESSING","textShapes":9}
+{"kind":"shape","id":"sh/dgf2hwny","slide":1,"bbox":[0,0,20,720]}
+{"kind":"textbox","id":"sh/qd436147","slide":1,"text":"PROJECT AKHIR • NATURAL LANGUAGE PROCESSING","textPreview":"PROJECT AKHIR • NATURAL LANGUAGE PROCESSING","textChars":43,"textLines":1,"bbox":[72,56,650,28]}
+{"kind":"textbox","id":"sh/bexkf65s","slide":1,"text":"Chatbot FAQ\nAkademik Kampus","textPreview":"Chatbot FAQ | Akademik Kampus","textChars":27,"textLines":2,"bbox":[72,138,790,188]}
+{"kind":"textbox","id":"sh/obml4rm1","slide":1,"text":"Klasifikasi intent, slot filling, dan dialog multi-turn untuk layanan akademik Universitas Mercu Buana.","textPreview":"Klasifikasi intent, slot filling, dan dialog multi-turn untuk layanan akademik Universitas Mercu Buana.","textChars":103,"textLines":1,"bbox":[76,356,650,84]}
+{"kind":"textbox","id":"sh/pcv2dwnm","slide":1,"text":"TF-IDF","textPreview":"TF-IDF","textChars":6,"textLines":1,"bbox":[76,480,114,34]}
+{"kind":"textbox","id":"sh/2p432h4b","slide":1,"text":"LOGISTIC REGRESSION","textPreview":"LOGISTIC REGRESSION","textChars":19,"textLines":1,"bbox":[202,480,218,34]}
+{"kind":"textbox","id":"sh/3qdkbm5w","slide":1,"text":"STREAMLIT","textPreview":"STREAMLIT","textChars":9,"textLines":1,"bbox":[432,480,126,34]}
+{"kind":"shape","id":"sh/87qlgvml","slide":1,"bbox":[872,112,300,446]}
+{"kind":"textbox","id":"sh/98zmpgn6","slide":1,"text":"UMB\nACADEMIC\nASSISTANT","textPreview":"UMB | ACADEMIC | ASSISTANT","textChars":22,"textLines":3,"bbox":[914,170,220,172]}
+{"kind":"shape","id":"sh/l87etwfa","slide":1,"bbox":[930,372,188,0]}
+{"kind":"textbox","id":"sh/07yd0rep","slide":1,"text":"250 utterances\n5 intents\n98% accuracy","textPreview":"250 utterances | 5 intents | 98% accuracy","textChars":37,"textLines":3,"bbox":[922,398,204,116]}
+{"kind":"textbox","id":"sh/z6pwrmx4","slide":1,"text":"Anggota 1 • Anggota 2 • Anggota 3","textPreview":"Anggota 1 • Anggota 2 • Anggota 3","textChars":33,"textLines":1,"bbox":[76,638,620,24]}
+{"kind":"notes","id":"nt/0wab67","slide":1,"text":"Pembuka: jelaskan bahwa sistem tersedia melalui CLI dan web.\n\n[Sources]\n- Internal project specification and evaluation artifacts (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/wvornj","slide":2,"title":"CHATBOT FAQ AKADEMIK","textShapes":15}
+{"kind":"textbox","id":"sh/ax0fax0f","slide":2,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/x0relczq","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/wzixc7i5","slide":2,"text":"Masalah yang ingin diselesaikan","textPreview":"Masalah yang ingin diselesaikan","textChars":31,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/j2twnmhw","slide":2,"bbox":[64,148,1152,0]}
+{"kind":"textbox","id":"sh/i1kfeh0b","slide":2,"text":"Pertanyaan akademik berulang membutuhkan jawaban yang cepat, konsisten, dan tersedia di luar jam layanan.","textPreview":"Pertanyaan akademik berulang membutuhkan jawaban yang cepat, konsisten, dan tersedia di luar jam layanan.","textChars":105,"textLines":1,"bbox":[64,182,684,86]}
+{"kind":"shape","id":"sh/54bepcz2","slide":2,"bbox":[64,310,352,266]}
+{"kind":"textbox","id":"sh/k32xg7ih","slide":2,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[90,334,62,42]}
+{"kind":"textbox","id":"sh/z6pwbihs","slide":2,"text":"Informasi tersebar","textPreview":"Informasi tersebar","textChars":18,"textLines":1,"bbox":[90,392,292,42]}
+{"kind":"textbox","id":"sh/y5gv2d07","slide":2,"text":"Mahasiswa harus mencari sumber berbeda untuk KRS, UKT, ujian, beasiswa, dan portal.","textPreview":"Mahasiswa harus mencari sumber berbeda untuk KRS, UKT, ujian, beasiswa, dan portal.","textChars":83,"textLines":1,"bbox":[90,452,292,84]}
+{"kind":"shape","id":"sh/0f61cz6x","slide":2,"bbox":[448,310,352,266]}
+{"kind":"textbox","id":"sh/1gf2547i","slide":2,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[474,334,62,42]}
+{"kind":"textbox","id":"sh/edojapor","slide":2,"text":"Respons tidak selalu instan","textPreview":"Respons tidak selalu instan","textChars":27,"textLines":1,"bbox":[474,392,292,42]}
+{"kind":"textbox","id":"sh/zexk3upc","slide":2,"text":"Pertanyaan sederhana tetap menunggu petugas atau jam kerja layanan.","textPreview":"Pertanyaan sederhana tetap menunggu petugas atau jam kerja layanan.","textChars":67,"textLines":1,"bbox":[474,452,292,84]}
+{"kind":"shape","id":"sh/o3q1gj69","slide":2,"bbox":[832,310,352,266]}
+{"kind":"textbox","id":"sh/94z29o7e","slide":2,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[858,334,62,42]}
+{"kind":"textbox","id":"sh/mhoje9o3","slide":2,"text":"Bahasa pengguna bervariasi","textPreview":"Bahasa pengguna bervariasi","textChars":26,"textLines":1,"bbox":[858,392,292,42]}
+{"kind":"textbox","id":"sh/n2xk7epo","slide":2,"text":"Kalimat singkat, typo, dan istilah berbeda perlu dipetakan ke maksud yang sama.","textPreview":"Kalimat singkat, typo, dan istilah berbeda perlu dipetakan ke maksud yang sama.","textChars":79,"textLines":1,"bbox":[858,452,292,84]}
+{"kind":"shape","id":"sh/47m14f6p","slide":2,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/p8v2xk7a","slide":2,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/ls3qlcv2","slide":2,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/wvornj","slide":2,"text":"[Sources]\n- Project problem statement in docs/superpowers/specs/2026-07-27-chatbot-faq-akademik-design.md (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/zjmnp7","slide":3,"title":"CHATBOT FAQ AKADEMIK","textShapes":15}
+{"kind":"textbox","id":"sh/oz2loj2p","slide":3,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/3yt4vy14","slide":3,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/2xk3mtkj","slide":3,"text":"Solusi dan kebutuhan fungsional","textPreview":"Solusi dan kebutuhan fungsional","textChars":31,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/dovm18j6","slide":3,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/cnm5s3il","slide":3,"bbox":[64,184,466,428]}
+{"kind":"textbox","id":"sh/bmd4zy10","slide":3,"text":"TUJUAN","textPreview":"TUJUAN","textChars":6,"textLines":1,"bbox":[96,214,120,24]}
+{"kind":"textbox","id":"sh/qlk3qt0v","slide":3,"text":"Asisten akademik sederhana yang memahami intent dan memandu proses secara bertahap.","textPreview":"Asisten akademik sederhana yang memahami intent dan memandu proses secara bertahap.","textChars":83,"textLines":1,"bbox":[96,266,370,148]}
+{"kind":"textbox","id":"sh/lsvm58ji","slide":3,"text":"Dua kanal","textPreview":"Dua kanal","textChars":9,"textLines":1,"bbox":[96,466,120,24]}
+{"kind":"textbox","id":"sh/krm5wnix","slide":3,"text":"CLI PYTHON","textPreview":"CLI PYTHON","textChars":10,"textLines":1,"bbox":[96,510,132,34]}
+{"kind":"textbox","id":"sh/ixsjmdwv","slide":3,"text":"WEB STREAMLIT","textPreview":"WEB STREAMLIT","textChars":13,"textLines":1,"bbox":[240,510,172,34]}
+{"kind":"shape","id":"sh/jy10fixg","slide":3,"bbox":[566,184,650,428]}
+{"kind":"shape","id":"sh/kzu1one1","slide":3,"bbox":[604,228,12,12]}
+{"kind":"textbox","id":"sh/5k32h8f6","slide":3,"text":"Menerima input teks dan memprediksi 1 dari 5 intent.","textPreview":"Menerima input teks dan memprediksi 1 dari 5 intent.","textChars":52,"textLines":1,"bbox":[632,220,538,63]}
+{"kind":"shape","id":"sh/6lcjqdwr","slide":3,"bbox":[604,295,12,12]}
+{"kind":"textbox","id":"sh/7mlkjixc","slide":3,"text":"Mengekstrak NIM serta kode mata kuliah dengan regex.","textPreview":"Mengekstrak NIM serta kode mata kuliah dengan regex.","textChars":52,"textLines":1,"bbox":[632,287,538,63]}
+{"kind":"shape","id":"sh/snu1snex","slide":3,"bbox":[604,362,12,12]}
+{"kind":"textbox","id":"sh/to32lsfi","slide":3,"text":"Menjalankan percakapan multi-turn dengan tahap konfirmasi.","textPreview":"Menjalankan percakapan multi-turn dengan tahap konfirmasi.","textChars":58,"textLines":1,"bbox":[632,354,538,63]}
+{"kind":"shape","id":"sh/mp8jetgn","slide":3,"bbox":[604,429,12,12]}
+{"kind":"textbox","id":"sh/nqh07yx8","slide":3,"text":"Menyimpan log CSV dengan penyamaran NIM.","textPreview":"Menyimpan log CSV dengan penyamaran NIM.","textChars":40,"textLines":1,"bbox":[632,421,538,63]}
+{"kind":"shape","id":"sh/ruxgfud0","slide":3,"bbox":[604,496,12,12]}
+{"kind":"textbox","id":"sh/q9ofmpwf","slide":3,"text":"Menampilkan confidence dan menyediakan reset percakapan.","textPreview":"Menampilkan confidence dan menyediakan reset percakapan.","textChars":56,"textLines":1,"bbox":[632,488,538,63]}
+{"kind":"shape","id":"sh/dwfyh4vq","slide":3,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/cv6hozel","slide":3,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/36dgbado","slide":3,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/zjmnp7","slide":3,"text":"[Sources]\n- Internal requirements derived from the UAS rubric and project implementation (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/v0jdq4","slide":4,"title":"CHATBOT FAQ AKADEMIK","textShapes":22}
+{"kind":"textbox","id":"sh/l43qh4jy","slide":4,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/y1c7mpkn","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/z2l8fu18","slide":4,"text":"Arsitektur chatbot — dari input ke respons","textPreview":"Arsitektur chatbot — dari input ke respons","textChars":42,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/87epsz2p","slide":4,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/98nql4ja","slide":4,"bbox":[272,356,58,0]}
+{"kind":"shape","id":"sh/m5c7qpkj","slide":4,"bbox":[504,356,58,0]}
+{"kind":"shape","id":"sh/n6l8ju14","slide":4,"bbox":[736,356,58,0]}
+{"kind":"shape","id":"sh/obapgf2l","slide":4,"bbox":[968,356,58,0]}
+{"kind":"shape","id":"sh/pcjq9k36","slide":4,"bbox":[64,250,208,214]}
+{"kind":"textbox","id":"sh/dk7ytcv2","slide":4,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[88,272,42,28]}
+{"kind":"textbox","id":"sh/cjyx07eh","slide":4,"text":"Input","textPreview":"Input","textChars":5,"textLines":1,"bbox":[88,324,160,38]}
+{"kind":"textbox","id":"sh/ripgr2dw","slide":4,"text":"CLI / Web","textPreview":"CLI / Web","textChars":9,"textLines":1,"bbox":[88,380,160,42]}
+{"kind":"shape","id":"sh/qhgfyxwb","slide":4,"bbox":[296,250,208,214]}
+{"kind":"textbox","id":"sh/1oryxcvy","slide":4,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[320,272,42,28]}
+{"kind":"textbox","id":"sh/0nih4red","slide":4,"text":"Preprocessing","textPreview":"Preprocessing","textChars":13,"textLines":1,"bbox":[320,324,160,38]}
+{"kind":"textbox","id":"sh/zmpgvmds","slide":4,"text":"clean + tokenize","textPreview":"clean + tokenize","textChars":16,"textLines":1,"bbox":[320,380,160,42]}
+{"kind":"shape","id":"sh/elgf2hwn","slide":4,"bbox":[528,250,208,214]}
+{"kind":"textbox","id":"sh/9cry1wva","slide":4,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[552,272,42,28]}
+{"kind":"textbox","id":"sh/orih8rep","slide":4,"text":"Intent","textPreview":"Intent","textChars":6,"textLines":1,"bbox":[552,324,160,38]}
+{"kind":"textbox","id":"sh/8vq14v2l","slide":4,"text":"TF-IDF + LR","textPreview":"TF-IDF + LR","textChars":11,"textLines":1,"bbox":[552,380,160,42]}
+{"kind":"shape","id":"sh/twzid036","slide":4,"bbox":[760,250,208,214]}
+{"kind":"textbox","id":"sh/6t8j25kv","slide":4,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[784,272,42,28]}
+{"kind":"textbox","id":"sh/7uh0bqlg","slide":4,"text":"Dialog","textPreview":"Dialog","textChars":6,"textLines":1,"bbox":[784,324,160,38]}
+{"kind":"textbox","id":"sh/gja18f2x","slide":4,"text":"state + slots","textPreview":"state + slots","textChars":13,"textLines":1,"bbox":[784,380,160,42]}
+{"kind":"shape","id":"sh/hkjihk3i","slide":4,"bbox":[992,250,208,214]}
+{"kind":"textbox","id":"sh/ux8j65kr","slide":4,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1016,272,42,28]}
+{"kind":"textbox","id":"sh/vyh0falc","slide":4,"text":"Output","textPreview":"Output","textChars":6,"textLines":1,"bbox":[1016,324,160,38]}
+{"kind":"textbox","id":"sh/c36hwbmt","slide":4,"text":"response + log","textPreview":"response + log","textChars":14,"textLines":1,"bbox":[1016,380,160,42]}
+{"kind":"shape","id":"sh/xofi5g3y","slide":4,"bbox":[64,500,1152,112]}
+{"kind":"textbox","id":"sh/fi54be5g","slide":4,"text":"Prinsip desain","textPreview":"Prinsip desain","textChars":14,"textLines":1,"bbox":[94,530,170,28]}
+{"kind":"textbox","id":"sh/ehc32t4b","slide":4,"text":"Model menentukan maksud; dialog manager menjaga konteks; logger menyediakan jejak evaluasi.","textPreview":"Model menentukan maksud; dialog manager menjaga konteks; logger menyediakan jejak evaluasi.","textChars":91,"textLines":1,"bbox":[270,524,882,46]}
+{"kind":"shape","id":"sh/1knmdonm","slide":4,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/0jel4jm1","slide":4,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/relk7e5k","slide":4,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/v0jdq4","slide":4,"text":"[Sources]\n- Internal architecture implemented in preprocessing.py, train_eval.py, dialog_manager.py, cli_app.py, ui_app.py, and chat_logger.py (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/3w08jf","slide":5,"title":"CHATBOT FAQ AKADEMIK","textShapes":17}
+{"kind":"textbox","id":"sh/gn294nyd","slide":5,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/fmtsv2xs","slide":5,"text":"05","textPreview":"05","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/ul0r2xg7","slide":5,"text":"Flow dialog dan state conversation","textPreview":"Flow dialog dan state conversation","textChars":34,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/tkrqtsfm","slide":5,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/sji90nyh","slide":5,"bbox":[270,302,64,0]}
+{"kind":"shape","id":"sh/7i98rixw","slide":5,"bbox":[522,302,64,0]}
+{"kind":"shape","id":"sh/6h0rydgb","slide":5,"bbox":[774,302,64,0]}
+{"kind":"shape","id":"sh/dgva5cf6","slide":5,"bbox":[82,245,188,114]}
+{"kind":"textbox","id":"sh/cfm9cryl","slide":5,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[100,261,36,22]}
+{"kind":"textbox","id":"sh/e1kj61o7","slide":5,"text":"IDLE","textPreview":"IDLE","textChars":4,"textLines":1,"bbox":[100,301,152,30]}
+{"kind":"shape","id":"sh/f2tkz6ps","slide":5,"bbox":[334,245,188,114]}
+{"kind":"textbox","id":"sh/0nm18b6d","slide":5,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[352,261,36,22]}
+{"kind":"textbox","id":"sh/1ov21w7y","slide":5,"text":"WAIT NIM","textPreview":"WAIT NIM","textChars":8,"textLines":1,"bbox":[352,301,152,30]}
+{"kind":"shape","id":"sh/qxkj2hob","slide":5,"bbox":[586,245,188,114]}
+{"kind":"textbox","id":"sh/ryt0vmpg","slide":5,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[604,261,36,22]}
+{"kind":"textbox","id":"sh/sz214r61","slide":5,"text":"WAIT MK","textPreview":"WAIT MK","textChars":7,"textLines":1,"bbox":[604,301,152,30]}
+{"kind":"shape","id":"sh/d0bixw7m","slide":5,"bbox":[838,245,188,114]}
+{"kind":"textbox","id":"sh/at4jelof","slide":5,"text":"04","textPreview":"04","textChars":2,"textLines":1,"bbox":[856,261,36,22]}
+{"kind":"textbox","id":"sh/buxk7q50","slide":5,"text":"KONFIRMASI","textPreview":"KONFIRMASI","textChars":10,"textLines":1,"bbox":[856,301,152,30]}
+{"kind":"textbox","id":"sh/nm5oje10","slide":5,"text":"Ya","textPreview":"Ya","textChars":2,"textLines":1,"bbox":[1039,271,44,22]}
+{"kind":"shape","id":"sh/m1w7a90f","slide":5,"bbox":[1026,359,0,106]}
+{"kind":"shape","id":"sh/9onqloj6","slide":5,"bbox":[898,466,256,78]}
+{"kind":"textbox","id":"sh/8nepcjil","slide":5,"text":"Selesai → kembali IDLE","textPreview":"Selesai → kembali IDLE","textChars":22,"textLines":1,"bbox":[918,490,216,28]}
+{"kind":"shape","id":"sh/vqp8ny1c","slide":5,"bbox":[732,390,230,48]}
+{"kind":"textbox","id":"sh/apw7et0r","slide":5,"text":"Tidak → ulangi input","textPreview":"Tidak → ulangi input","textChars":20,"textLines":1,"bbox":[748,404,198,22]}
+{"kind":"textbox","id":"sh/xs7qpoj2","slide":5,"text":"Chatbot meminta konfirmasi ulang sebelum mengeksekusi respons akhir.","textPreview":"Chatbot meminta konfirmasi ulang sebelum mengeksekusi respons akhir.","textChars":68,"textLines":1,"bbox":[270,536,560,44]}
+{"kind":"shape","id":"sh/wrypg3ix","slide":5,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/jup8ry18","slide":5,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/itg7it0n","slide":5,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/3w08jf","slide":5,"text":"[Sources]\n- Internal state machine implemented in dialog_manager.py (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/flezm8","slide":6,"title":"CHATBOT FAQ AKADEMIK","textShapes":23}
+{"kind":"textbox","id":"sh/6t0b29sn","slide":6,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/twbuxory","slide":6,"text":"06","textPreview":"06","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/svit4jad","slide":6,"text":"Dataset: 250 utterances yang seimbang","textPreview":"Dataset: 250 utterances yang seimbang","textChars":37,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/fytczy94","slide":6,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/exkb6tsj","slide":6,"bbox":[64,190,240,134]}
+{"kind":"shape","id":"sh/1kbu1ora","slide":6,"bbox":[64,190,8,134]}
+{"kind":"textbox","id":"sh/gz2t83ap","slide":6,"text":"250","textPreview":"250","textChars":3,"textLines":1,"bbox":[92,208,192,58]}
+{"kind":"textbox","id":"sh/v2pcnu90","slide":6,"text":"TOTAL DATA TEKS","textPreview":"TOTAL DATA TEKS","textChars":15,"textLines":1,"bbox":[92,274,192,28]}
+{"kind":"shape","id":"sh/a1gbupsf","slide":6,"bbox":[324,190,240,134]}
+{"kind":"shape","id":"sh/cjq5wz2d","slide":6,"bbox":[324,190,8,134]}
+{"kind":"textbox","id":"sh/dkzmpkji","slide":6,"text":"5","textPreview":"5","textChars":1,"textLines":1,"bbox":[352,208,192,58]}
+{"kind":"textbox","id":"sh/qx8nupk7","slide":6,"text":"INTENT","textPreview":"INTENT","textChars":6,"textLines":1,"bbox":[352,274,192,28]}
+{"kind":"shape","id":"sh/rih4nu1s","slide":6,"bbox":[584,190,240,134]}
+{"kind":"shape","id":"sh/0nq50z29","slide":6,"bbox":[584,190,8,134]}
+{"kind":"textbox","id":"sh/1ojmt4ju","slide":6,"text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[612,208,192,58]}
+{"kind":"textbox","id":"sh/el8nypk3","slide":6,"text":"DATA / INTENT","textPreview":"DATA / INTENT","textChars":13,"textLines":1,"bbox":[612,274,192,28]}
+{"kind":"shape","id":"sh/zmh4ru1o","slide":6,"bbox":[844,190,240,134]}
+{"kind":"shape","id":"sh/gr6lof25","slide":6,"bbox":[844,190,8,134]}
+{"kind":"textbox","id":"sh/hsfmh0jq","slide":6,"text":"100%","textPreview":"100%","textChars":4,"textLines":1,"bbox":[872,208,192,58]}
+{"kind":"textbox","id":"sh/ho72lwbe","slide":6,"text":"UTTERANCE UNIK","textPreview":"UTTERANCE UNIK","textChars":14,"textLines":1,"bbox":[872,274,192,28]}
+{"kind":"textbox","id":"sh/wnylsrut","slide":6,"text":"KRS","textPreview":"KRS","textChars":3,"textLines":1,"bbox":[80,388,118,26]}
+{"kind":"shape","id":"sh/vmpkjmt8","slide":6,"bbox":[205,391,860,20]}
+{"kind":"shape","id":"sh/algjqhcn","slide":6,"bbox":[205,391,860,20]}
+{"kind":"textbox","id":"sh/5c72pgba","slide":6,"text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[1082,388,56,26]}
+{"kind":"textbox","id":"sh/4bylwbup","slide":6,"text":"UKT","textPreview":"UKT","textChars":3,"textLines":1,"bbox":[80,435,118,26]}
+{"kind":"shape","id":"sh/jqpkn6tk","slide":6,"bbox":[205,438,860,20]}
+{"kind":"shape","id":"sh/ipg3u1cz","slide":6,"bbox":[205,438,860,20]}
+{"kind":"textbox","id":"sh/tgr2tgbm","slide":6,"text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[1082,435,56,26]}
+{"kind":"textbox","id":"sh/sfil0bu1","slide":6,"text":"Ujian","textPreview":"Ujian","textChars":5,"textLines":1,"bbox":[80,482,118,26]}
+{"kind":"shape","id":"sh/qpsryto7","slide":6,"bbox":[205,485,860,20]}
+{"kind":"shape","id":"sh/ra187e5s","slide":6,"bbox":[205,485,860,20]}
+{"kind":"textbox","id":"sh/cba90j6d","slide":6,"text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[1082,482,56,26]}
+{"kind":"textbox","id":"sh/dcjq9ony","slide":6,"text":"Beasiswa","textPreview":"Beasiswa","textChars":8,"textLines":1,"bbox":[80,529,118,26]}
+{"kind":"shape","id":"sh/edsr2toj","slide":6,"bbox":[205,532,860,20]}
+{"kind":"shape","id":"sh/ze18by5o","slide":6,"bbox":[205,532,860,20]}
+{"kind":"textbox","id":"sh/0fa94369","slide":6,"text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[1082,529,56,26]}
+{"kind":"textbox","id":"sh/1g3qd8nu","slide":6,"text":"Portal","textPreview":"Portal","textChars":6,"textLines":1,"bbox":[80,576,118,26]}
+{"kind":"shape","id":"sh/mhcr6dof","slide":6,"bbox":[205,579,860,20]}
+{"kind":"shape","id":"sh/nil8fy50","slide":6,"bbox":[205,579,860,20]}
+{"kind":"textbox","id":"sh/vyh8jyx4","slide":6,"text":"50","textPreview":"50","textChars":2,"textLines":1,"bbox":[1082,576,56,26]}
+{"kind":"shape","id":"sh/ax8rqtgj","slide":6,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/x0zql8fa","slide":6,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/wzq9s3yp","slide":6,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/flezm8","slide":6,"text":"[Sources]\n- Internal dataset distribution from dataset_faq.json and artifacts/evaluation/dataset_distribution.csv (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/4vf3jd","slide":7,"title":"CHATBOT FAQ AKADEMIK","textShapes":16}
+{"kind":"textbox","id":"sh/vyx436x0","slide":7,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/gz6lcbel","slide":7,"text":"07","textPreview":"07","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/h0fm5wf6","slide":7,"text":"Preprocessing: teks mentah menjadi fitur","textPreview":"Preprocessing: teks mentah menjadi fitur","textChars":40,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/ilo3e1wr","slide":7,"bbox":[64,148,1152,0]}
+{"kind":"textbox","id":"sh/3mx476xw","slide":7,"text":"1. LOWERCASE","textPreview":"1. LOWERCASE","textChars":12,"textLines":1,"bbox":[64,184,262,34]}
+{"kind":"textbox","id":"sh/4n6lgbeh","slide":7,"text":"2. CLEANING","textPreview":"2. CLEANING","textChars":11,"textLines":1,"bbox":[350,184,262,34]}
+{"kind":"textbox","id":"sh/5ofm9gv2","slide":7,"text":"3. TOKENIZATION","textPreview":"3. TOKENIZATION","textChars":15,"textLines":1,"bbox":[636,184,262,34]}
+{"kind":"textbox","id":"sh/qponilwn","slide":7,"text":"4. NORMALISASI TYPO","textPreview":"4. NORMALISASI TYPO","textChars":19,"textLines":1,"bbox":[922,184,262,34]}
+{"kind":"shape","id":"sh/rqh4bqd8","slide":7,"bbox":[64,258,548,298]}
+{"kind":"textbox","id":"sh/jmlwzatw","slide":7,"text":"SEBELUM","textPreview":"SEBELUM","textChars":7,"textLines":1,"bbox":[96,290,96,22]}
+{"kind":"textbox","id":"sh/ylcvq5sr","slide":7,"text":"\"Gimana cara isi KRS???\"","textPreview":"\"Gimana cara isi KRS???\"","textChars":24,"textLines":1,"bbox":[96,346,450,54]}
+{"kind":"textbox","id":"sh/lo3e10b2","slide":7,"text":"Tanda baca, kapitalisasi, dan variasi bentuk kata masih ada.","textPreview":"Tanda baca, kapitalisasi, dan variasi bentuk kata masih ada.","textChars":60,"textLines":1,"bbox":[96,430,430,58]}
+{"kind":"shape","id":"sh/knudsvah","slide":7,"bbox":[668,258,548,298]}
+{"kind":"textbox","id":"sh/bylwvqt0","slide":7,"text":"SESUDAH","textPreview":"SESUDAH","textChars":7,"textLines":1,"bbox":[700,290,96,22]}
+{"kind":"textbox","id":"sh/axsvmlsf","slide":7,"text":"gimana cara isi krs","textPreview":"gimana cara isi krs","textChars":19,"textLines":1,"bbox":[700,346,450,54]}
+{"kind":"textbox","id":"sh/xk3ex0b6","slide":7,"text":"Token: [gimana, cara, isi, krs]","textPreview":"Token: [gimana, cara, isi, krs]","textChars":31,"textLines":1,"bbox":[700,430,430,58]}
+{"kind":"textbox","id":"sh/wjudoval","slide":7,"text":"Catatan: preprocessing dipakai konsisten saat training dan inference.","textPreview":"Catatan: preprocessing dipakai konsisten saat training dan inference.","textChars":69,"textLines":1,"bbox":[64,590,1152,32]}
+{"kind":"shape","id":"sh/vu5w7u94","slide":7,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/utwfypsz","slide":7,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/q90z6tc7","slide":7,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/4vf3jd","slide":7,"text":"[Sources]\n- Internal preprocessing examples from artifacts/evaluation/preprocessing_examples.csv and preprocessing.py (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/mbd3ep","slide":8,"title":"CHATBOT FAQ AKADEMIK","textShapes":21}
+{"kind":"textbox","id":"sh/jqhwzihg","slide":8,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/kbqxsny1","slide":8,"text":"08","textPreview":"08","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/5cje1sz6","slide":8,"text":"Model intent classification","textPreview":"Model intent classification","textChars":27,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/al8vmdgj","slide":8,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/vmhwvih4","slide":8,"bbox":[64,188,1152,126]}
+{"kind":"textbox","id":"sh/wnqxonyp","slide":8,"text":"TEKS","textPreview":"TEKS","textChars":4,"textLines":1,"bbox":[104,229,124,38]}
+{"kind":"shape","id":"sh/xozexsza","slide":8,"bbox":[244,248,96,0]}
+{"kind":"textbox","id":"sh/mhovit0n","slide":8,"text":"WORD + CHAR\nTF-IDF","textPreview":"WORD + CHAR | TF-IDF","textChars":18,"textLines":2,"bbox":[356,214,230,70]}
+{"kind":"shape","id":"sh/nixwryh8","slide":8,"bbox":[602,248,96,0]}
+{"kind":"textbox","id":"sh/n21cfi54","slide":8,"text":"LOGISTIC\nREGRESSION","textPreview":"LOGISTIC | REGRESSION","textChars":19,"textLines":2,"bbox":[714,214,230,70]}
+{"kind":"shape","id":"sh/m1sbmd4j","slide":8,"bbox":[960,248,72,0]}
+{"kind":"textbox","id":"sh/94juh8na","slide":8,"text":"INTENT","textPreview":"INTENT","textChars":6,"textLines":1,"bbox":[1048,229,124,38]}
+{"kind":"shape","id":"sh/83adonmp","slide":8,"bbox":[64,360,262,214]}
+{"kind":"textbox","id":"sh/v6lcji50","slide":8,"text":"WORD N-GRAM","textPreview":"WORD N-GRAM","textChars":11,"textLines":1,"bbox":[88,388,210,22]}
+{"kind":"textbox","id":"sh/a5cvqd4f","slide":8,"text":"(1, 2)","textPreview":"(1, 2)","textChars":6,"textLines":1,"bbox":[88,430,210,44]}
+{"kind":"textbox","id":"sh/x83ulsn6","slide":8,"text":"menangkap kata dan frasa pendek","textPreview":"menangkap kata dan frasa pendek","textChars":31,"textLines":1,"bbox":[88,500,210,48]}
+{"kind":"shape","id":"sh/w7udsnml","slide":8,"bbox":[350,360,262,214]}
+{"kind":"textbox","id":"sh/rahc7y5w","slide":8,"text":"CHARACTER N-GRAM","textPreview":"CHARACTER N-GRAM","textChars":16,"textLines":1,"bbox":[374,388,210,22]}
+{"kind":"textbox","id":"sh/q98bet4b","slide":8,"text":"(2, 5)","textPreview":"(2, 5)","textChars":6,"textLines":1,"bbox":[374,430,210,44]}
+{"kind":"textbox","id":"sh/u5gfm1oz","slide":8,"text":"lebih tahan pada variasi ejaan","textPreview":"lebih tahan pada variasi ejaan","textChars":30,"textLines":1,"bbox":[374,500,210,48]}
+{"kind":"shape","id":"sh/fqpgv6pk","slide":8,"bbox":[636,360,262,214]}
+{"kind":"textbox","id":"sh/gryxor65","slide":8,"text":"SPLIT","textPreview":"SPLIT","textChars":5,"textLines":1,"bbox":[660,388,210,22]}
+{"kind":"textbox","id":"sh/hs7yxw7a","slide":8,"text":"80 : 20","textPreview":"80 : 20","textChars":7,"textLines":1,"bbox":[660,430,210,44]}
+{"kind":"textbox","id":"sh/61wfihon","slide":8,"text":"200 train dan 50 test, stratified","textPreview":"200 train dan 50 test, stratified","textChars":33,"textLines":1,"bbox":[660,500,210,48]}
+{"kind":"shape","id":"sh/725wrmp8","slide":8,"bbox":[922,360,262,214]}
+{"kind":"textbox","id":"sh/s3exkr6t","slide":8,"text":"REPRODUCIBLE","textPreview":"REPRODUCIBLE","textChars":12,"textLines":1,"bbox":[946,388,210,22]}
+{"kind":"textbox","id":"sh/t47etw7e","slide":8,"text":"seed 42","textPreview":"seed 42","textChars":7,"textLines":1,"bbox":[946,430,210,44]}
+{"kind":"textbox","id":"sh/ixwfehor","slide":8,"text":"hasil dapat diuji ulang","textPreview":"hasil dapat diuji ulang","textChars":23,"textLines":1,"bbox":[946,500,210,48]}
+{"kind":"shape","id":"sh/jy5wnmpc","slide":8,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/1sbitkru","slide":8,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/0r2hkfq9","slide":8,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/mbd3ep","slide":8,"text":"[Sources]\n- Scikit-learn TfidfVectorizer documentation: https://scikit-learn.org/stable/modules/generated/sklearn.feature_extraction.text.TfidfVectorizer.html (accessed 2026-07-27).\n- Scikit-learn LogisticRegression documentation: https://scikit-learn.org/stable/modules/generated/sklearn.linear_model.LogisticRegression.html (accessed 2026-07-27).\n- Internal implementation in train_eval.py (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/oqz51h","slide":9,"title":"CHATBOT FAQ AKADEMIK","textShapes":23}
+{"kind":"textbox","id":"sh/a9k761kv","slide":9,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/xwb61wjm","slide":9,"text":"09","textPreview":"09","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/wb2p8r21","slide":9,"text":"Slot filling dan konfirmasi multi-turn","textPreview":"Slot filling dan konfirmasi multi-turn","textChars":38,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/n6tovm1k","slide":9,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/m50n2hkz","slide":9,"bbox":[64,184,498,424]}
+{"kind":"textbox","id":"sh/98b6xwja","slide":9,"text":"RULE-BASED SLOT","textPreview":"RULE-BASED SLOT","textChars":15,"textLines":1,"bbox":[96,216,180,22]}
+{"kind":"textbox","id":"sh/87254r25","slide":9,"text":"Regex mengekstrak informasi yang terstruktur.","textPreview":"Regex mengekstrak informasi yang terstruktur.","textChars":45,"textLines":1,"bbox":[96,260,402,62]}
+{"kind":"textbox","id":"sh/r2do761o","slide":9,"text":"NIM 10–12 DIGIT","textPreview":"NIM 10–12 DIGIT","textChars":15,"textLines":1,"bbox":[96,350,196,34]}
+{"kind":"textbox","id":"sh/6147elk3","slide":9,"text":"KODE MK","textPreview":"KODE MK","textChars":7,"textLines":1,"bbox":[304,350,126,34]}
+{"kind":"textbox","id":"sh/83uhg7up","slide":9,"text":"Contoh","textPreview":"Contoh","textChars":6,"textLines":1,"bbox":[96,426,92,24]}
+{"kind":"textbox","id":"sh/94nypcba","slide":9,"text":"41523120017 → 415******17","textPreview":"41523120017 → 415******17","textChars":25,"textLines":1,"bbox":[96,464,380,40]}
+{"kind":"textbox","id":"sh/m1cfexcj","slide":9,"text":"Log menyimpan versi NIM yang disamarkan.","textPreview":"Log menyimpan versi NIM yang disamarkan.","textChars":40,"textLines":1,"bbox":[96,522,390,36]}
+{"kind":"shape","id":"sh/n2lgn2t4","slide":9,"bbox":[596,184,620,424]}
+{"kind":"textbox","id":"sh/0zuxcnud","slide":9,"text":"CONTOH DIALOG","textPreview":"CONTOH DIALOG","textChars":13,"textLines":1,"bbox":[628,216,180,22]}
+{"kind":"textbox","id":"sh/l03ylsby","slide":9,"text":"Mahasiswa","textPreview":"Mahasiswa","textChars":9,"textLines":1,"bbox":[628,264,100,20]}
+{"kind":"textbox","id":"sh/yxcfaxcn","slide":9,"text":"Saya ingin mengisi KRS","textPreview":"Saya ingin mengisi KRS","textChars":22,"textLines":1,"bbox":[738,262,424,42]}
+{"kind":"textbox","id":"sh/zylgjit8","slide":9,"text":"Bot","textPreview":"Bot","textChars":3,"textLines":1,"bbox":[628,325,100,20]}
+{"kind":"textbox","id":"sh/cvax8nuh","slide":9,"text":"Masukkan NIM Anda.","textPreview":"Masukkan NIM Anda.","textChars":18,"textLines":1,"bbox":[738,323,424,42]}
+{"kind":"textbox","id":"sh/dwjyhsv2","slide":9,"text":"Mahasiswa","textPreview":"Mahasiswa","textChars":9,"textLines":1,"bbox":[628,386,100,20]}
+{"kind":"textbox","id":"sh/tgbmpkje","slide":9,"text":"41523120017, pilih MK: 1, 2","textPreview":"41523120017, pilih MK: 1, 2","textChars":27,"textLines":1,"bbox":[738,384,424,42]}
+{"kind":"textbox","id":"sh/sfi5wfi9","slide":9,"text":"Bot","textPreview":"Bot","textChars":3,"textLines":1,"bbox":[628,447,100,20]}
+{"kind":"textbox","id":"sh/re94na1o","slide":9,"text":"Konfirmasi data KRS tersebut? (ya/tidak)","textPreview":"Konfirmasi data KRS tersebut? (ya/tidak)","textChars":40,"textLines":1,"bbox":[738,445,424,42]}
+{"kind":"textbox","id":"sh/6d0nu503","slide":9,"text":"Mahasiswa","textPreview":"Mahasiswa","textChars":9,"textLines":1,"bbox":[628,508,100,20]}
+{"kind":"textbox","id":"sh/5crml0ji","slide":9,"text":"ya","textPreview":"ya","textChars":2,"textLines":1,"bbox":[738,506,424,42]}
+{"kind":"shape","id":"sh/4ri5sfix","slide":9,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/jq94ja1c","slide":9,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/ip0nq50r","slide":9,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/oqz51h","slide":9,"text":"[Sources]\n- Internal slot and conversation-state implementation in dialog_manager.py and chat_logger.py (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/edc57j","slide":10,"title":"CHATBOT FAQ AKADEMIK","textShapes":13}
+{"kind":"textbox","id":"sh/21cvitoz","slide":10,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/p43ud87a","slide":10,"text":"10","textPreview":"10","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/43udk36p","slide":10,"text":"Implementasi: CLI dan UI web","textPreview":"Implementasi: CLI dan UI web","textChars":28,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/r65cfipg","slide":10,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/q5cvmdov","slide":10,"bbox":[64,184,548,414]}
+{"kind":"textbox","id":"sh/d8nuh87m","slide":10,"text":"CLI","textPreview":"CLI","textChars":3,"textLines":1,"bbox":[96,216,120,42]}
+{"kind":"shape","id":"sh/c7edon61","slide":10,"bbox":[96,286,484,238]}
+{"kind":"textbox","id":"sh/7a1c3epc","slide":10,"text":"$ python cli_app.py\nBot: Halo, saya UMB Academic Assistant.\nAnda: kapan jadwal ujian?\nBot: Jadwal ujian dapat dilihat di portal...\n[intent=jadwal_ujian | confidence=0.94]","textPreview":"$ python cli_app.py | Bot: Halo, saya UMB Academic Assistant. | Anda: kapan jadwal ujian? | Bot: Jadwal ujian dapat dilihat di portal... ...","textChars":170,"textLines":5,"bbox":[120,310,432,190]}
+{"kind":"textbox","id":"sh/69sba98r","slide":10,"text":"Ringan • dapat diuji lewat terminal • cocok untuk demonstrasi logika","textPreview":"Ringan • dapat diuji lewat terminal • cocok untuk demonstrasi logika","textChars":68,"textLines":1,"bbox":[96,550,464,28]}
+{"kind":"shape","id":"sh/wbutsbe1","slide":10,"bbox":[668,184,548,414]}
+{"kind":"textbox","id":"sh/xcnu1gvm","slide":10,"text":"WEB UI","textPreview":"WEB UI","textChars":6,"textLines":1,"bbox":[700,216,160,42]}
+{"kind":"shape","id":"sh/a9cbq1wb","slide":10,"bbox":[700,286,484,238]}
+{"kind":"textbox","id":"sh/valcz6dw","slide":10,"text":"UMB ACADEMIC ASSISTANT","textPreview":"UMB ACADEMIC ASSISTANT","textChars":22,"textLines":1,"bbox":[724,306,224,34]}
+{"kind":"shape","id":"sh/kfetwbed","slide":10,"bbox":[738,362,324,56]}
+{"kind":"textbox","id":"sh/5gnu5gvy","slide":10,"text":"Bagaimana cara isi KRS?","textPreview":"Bagaimana cara isi KRS?","textChars":23,"textLines":1,"bbox":[758,378,280,24]}
+{"kind":"shape","id":"sh/idwbulw7","slide":10,"bbox":[824,436,336,64]}
+{"kind":"textbox","id":"sh/je5c3qds","slide":10,"text":"Silakan masukkan NIM Anda.","textPreview":"Silakan masukkan NIM Anda.","textChars":26,"textLines":1,"bbox":[844,456,292,24]}
+{"kind":"textbox","id":"sh/0jatkre9","slide":10,"text":"Quick actions • download log • state & confidence","textPreview":"Quick actions • download log • state & confidence","textChars":49,"textLines":1,"bbox":[700,550,464,28]}
+{"kind":"shape","id":"sh/lk3utwve","slide":10,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/h4bi1oj6","slide":10,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/g3218j2l","slide":10,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/edc57j","slide":10,"text":"[Sources]\n- Streamlit chat elements documentation: https://docs.streamlit.io/develop/api-reference/chat (accessed 2026-07-27).\n- Internal implementation in cli_app.py and ui_app.py (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/nbdmo6","slide":11,"title":"CHATBOT FAQ AKADEMIK","textShapes":17}
+{"kind":"textbox","id":"sh/g3a9076p","slide":11,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/f21872p4","slide":11,"text":"11","textPreview":"11","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/u1sryhoj","slide":11,"text":"Hasil Evaluasi Model","textPreview":"Hasil Evaluasi Model","textChars":20,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/p83adw76","slide":11,"bbox":[64,148,1152,0]}
+{"kind":"textbox","id":"sh/47u94r6l","slide":11,"text":"98%","textPreview":"98%","textChars":3,"textLines":1,"bbox":[64,190,442,170]}
+{"kind":"textbox","id":"sh/36l8bmp0","slide":11,"text":"accuracy pada 50 data uji","textPreview":"accuracy pada 50 data uji","textChars":25,"textLines":1,"bbox":[74,356,400,38]}
+{"kind":"textbox","id":"sh/25cr2hof","slide":11,"text":"Dataset dibagi secara stratified: 200 train dan 50 test.","textPreview":"Dataset dibagi secara stratified: 200 train dan 50 test.","textChars":56,"textLines":1,"bbox":[74,412,400,58]}
+{"kind":"shape","id":"sh/5czq1s72","slide":11,"bbox":[540,194,308,134]}
+{"kind":"shape","id":"sh/kbq9sn6h","slide":11,"bbox":[540,194,8,134]}
+{"kind":"textbox","id":"sh/qxobq90v","slide":11,"text":"98.18%","textPreview":"98.18%","textChars":6,"textLines":1,"bbox":[568,212,260,58]}
+{"kind":"textbox","id":"sh/ryxcjehg","slide":11,"text":"MACRO PRECISION","textPreview":"MACRO PRECISION","textChars":15,"textLines":1,"bbox":[568,278,260,28]}
+{"kind":"shape","id":"sh/cj6tsji1","slide":11,"bbox":[868,194,308,134]}
+{"kind":"shape","id":"sh/dkfuloz6","slide":11,"bbox":[868,194,8,134]}
+{"kind":"textbox","id":"sh/elobu90r","slide":11,"text":"98.00%","textPreview":"98.00%","textChars":6,"textLines":1,"bbox":[896,212,260,58]}
+{"kind":"textbox","id":"sh/zmxcnehc","slide":11,"text":"MACRO RECALL","textPreview":"MACRO RECALL","textChars":12,"textLines":1,"bbox":[896,278,260,28]}
+{"kind":"shape","id":"sh/0n6twjix","slide":11,"bbox":[540,358,308,134]}
+{"kind":"shape","id":"sh/1ofupozi","slide":11,"bbox":[540,358,8,134]}
+{"kind":"textbox","id":"sh/mp8byt03","slide":11,"text":"97.99%","textPreview":"97.99%","textChars":6,"textLines":1,"bbox":[568,376,260,58]}
+{"kind":"textbox","id":"sh/nqhcryho","slide":11,"text":"MACRO F1-SCORE","textPreview":"MACRO F1-SCORE","textChars":14,"textLines":1,"bbox":[568,442,260,28]}
+{"kind":"shape","id":"sh/juhsfyxg","slide":11,"bbox":[868,358,308,134]}
+{"kind":"shape","id":"sh/yt8bmtwb","slide":11,"bbox":[868,358,8,134]}
+{"kind":"textbox","id":"sh/lwjah8fm","slide":11,"text":"49/50","textPreview":"49/50","textChars":5,"textLines":1,"bbox":[896,376,260,58]}
+{"kind":"textbox","id":"sh/kvqto3e1","slide":11,"text":"PREDIKSI BENAR","textPreview":"PREDIKSI BENAR","textChars":14,"textLines":1,"bbox":[896,442,260,28]}
+{"kind":"shape","id":"sh/bqhsbexk","slide":11,"bbox":[540,522,636,82]}
+{"kind":"textbox","id":"sh/ap8bitgz","slide":11,"text":"Interpretasi: performa tinggi pada data uji internal, tetapi belum menjamin generalisasi pada bahasa mahasiswa di dunia nyata.","textPreview":"Interpretasi: performa tinggi pada data uji internal, tetapi belum menjamin generalisasi pada bahasa mahasiswa di dunia nyata.","textChars":126,"textLines":1,"bbox":[568,544,580,42]}
+{"kind":"shape","id":"sh/xszadofq","slide":11,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/wrqtkje5","slide":11,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/nmxs7exo","slide":11,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/nbdmo6","slide":11,"text":"[Sources]\n- Internal metrics from artifacts/evaluation/evaluation_summary.json and classification_report.csv (accessed 2026-07-27).\n- Scikit-learn model evaluation guide: https://scikit-learn.org/stable/modules/model_evaluation.html (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/9cuth8","slide":12,"title":"CHATBOT FAQ AKADEMIK","textShapes":14}
+{"kind":"textbox","id":"sh/d03y9gn6","slide":12,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/qxsfylov","slide":12,"text":"12","textPreview":"12","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/by1g7q50","slide":12,"text":"Confusion matrix dan analisis kesalahan","textPreview":"Confusion matrix dan analisis kesalahan","textChars":39,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/ovaxwb6p","slide":12,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/2tsfu1oj","slide":12,"bbox":[690,184,526,430]}
+{"kind":"textbox","id":"sh/3u1w3654","slide":12,"text":"1 KESALAHAN","textPreview":"1 KESALAHAN","textChars":11,"textLines":1,"bbox":[722,214,142,34]}
+{"kind":"textbox","id":"sh/8rex8vmt","slide":12,"text":"Aktual","textPreview":"Aktual","textChars":6,"textLines":1,"bbox":[722,280,78,24]}
+{"kind":"textbox","id":"sh/9snyh0ne","slide":12,"text":"pendaftaran_krs","textPreview":"pendaftaran_krs","textChars":15,"textLines":1,"bbox":[816,278,344,26]}
+{"kind":"textbox","id":"sh/pkbmxszq","slide":12,"text":"Prediksi","textPreview":"Prediksi","textChars":8,"textLines":1,"bbox":[722,326,78,24]}
+{"kind":"textbox","id":"sh/4j254ny5","slide":12,"text":"syarat_beasiswa","textPreview":"syarat_beasiswa","textChars":15,"textLines":1,"bbox":[816,324,344,26]}
+{"kind":"textbox","id":"sh/3it4v2hk","slide":12,"text":"Kalimat","textPreview":"Kalimat","textChars":7,"textLines":1,"bbox":[722,376,78,24]}
+{"kind":"textbox","id":"sh/2h0n2xgz","slide":12,"text":"\"saya ingin daftar mata kuliah semester depan\"","textPreview":"\"saya ingin daftar mata kuliah semester depan\"","textChars":46,"textLines":1,"bbox":[816,370,344,56]}
+{"kind":"shape","id":"sh/hgrmtsze","slide":12,"bbox":[722,452,442,0]}
+{"kind":"textbox","id":"sh/gfi50ny9","slide":12,"text":"Penyebab","textPreview":"Penyebab","textChars":8,"textLines":1,"bbox":[722,476,92,24]}
+{"kind":"textbox","id":"sh/fe94riho","slide":12,"text":"Kata “daftar” dan konteks “semester depan” muncul pada beberapa domain sehingga batas intent berdekatan.","textPreview":"Kata “daftar” dan konteks “semester depan” muncul pada beberapa domain sehingga batas intent berdekatan.","textChars":104,"textLines":1,"bbox":[722,512,442,74]}
+{"kind":"shape","id":"sh/ud0nydg3","slide":12,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/1cv65czy","slide":12,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/0bm5w7yd","slide":12,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"image","id":"im/snepcvqx","slide":12,"name":"","alt":"Confusion matrix lima intent pada data uji","bbox":[64,184,590,430]}
+{"kind":"notes","id":"nt/9cuth8","slide":12,"text":"[Sources]\n- Internal confusion matrix and misclassification record from artifacts/evaluation/confusion_matrix.png and misclassified_examples.csv (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/s20lqb","slide":13,"title":"CHATBOT FAQ AKADEMIK","textShapes":18}
+{"kind":"textbox","id":"sh/krilc36d","slide":13,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/jq9k3yps","slide":13,"text":"13","textPreview":"13","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/ip03adon","slide":13,"text":"Rencana Demo — tiga skenario","textPreview":"Rencana Demo — tiga skenario","textChars":28,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/x4r21872","slide":13,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/w3il836h","slide":13,"bbox":[64,184,1152,118]}
+{"kind":"textbox","id":"sh/v2pkzypw","slide":13,"text":"01","textPreview":"01","textChars":2,"textLines":1,"bbox":[92,215,64,40]}
+{"kind":"textbox","id":"sh/a1g36t8b","slide":13,"text":"FAQ langsung","textPreview":"FAQ langsung","textChars":12,"textLines":1,"bbox":[184,208,250,34]}
+{"kind":"textbox","id":"sh/h0bmds76","slide":13,"text":"Tanya jadwal ujian → model memberi respons dan confidence.","textPreview":"Tanya jadwal ujian → model memberi respons dan confidence.","textChars":58,"textLines":1,"bbox":[458,209,514,52]}
+{"kind":"textbox","id":"sh/gz2lkn6l","slide":13,"text":"jadwal_ujian","textPreview":"jadwal_ujian","textChars":12,"textLines":1,"bbox":[990,223,190,34]}
+{"kind":"shape","id":"sh/ad4nah8j","slide":13,"bbox":[64,330,1152,118]}
+{"kind":"textbox","id":"sh/bed4j2po","slide":13,"text":"02","textPreview":"02","textChars":2,"textLines":1,"bbox":[92,361,64,40]}
+{"kind":"textbox","id":"sh/wfm5c7q9","slide":13,"text":"KRS multi-turn","textPreview":"KRS multi-turn","textChars":14,"textLines":1,"bbox":[184,354,250,34]}
+{"kind":"textbox","id":"sh/xgvmlc7u","slide":13,"text":"Intent KRS → NIM → kode MK → konfirmasi ya/tidak.","textPreview":"Intent KRS → NIM → kode MK → konfirmasi ya/tidak.","textChars":49,"textLines":1,"bbox":[458,355,514,52]}
+{"kind":"textbox","id":"sh/mpkn6x87","slide":13,"text":"pendaftaran_krs","textPreview":"pendaftaran_krs","textChars":15,"textLines":1,"bbox":[990,369,190,34]}
+{"kind":"shape","id":"sh/nqt4f2ps","slide":13,"bbox":[64,476,1152,118]}
+{"kind":"textbox","id":"sh/ob2587qd","slide":13,"text":"03","textPreview":"03","textChars":2,"textLines":1,"bbox":[92,507,64,40]}
+{"kind":"textbox","id":"sh/9cvmhc7y","slide":13,"text":"Portal & log","textPreview":"Portal & log","textChars":12,"textLines":1,"bbox":[184,500,250,34]}
+{"kind":"textbox","id":"sh/6loni1ob","slide":13,"text":"Tanya akses portal → tampilkan jawaban → unduh log CSV.","textPreview":"Tanya akses portal → tampilkan jawaban → unduh log CSV.","textChars":55,"textLines":1,"bbox":[458,501,514,52]}
+{"kind":"textbox","id":"sh/7mxormpw","slide":13,"text":"akses_portal","textPreview":"akses_portal","textChars":12,"textLines":1,"bbox":[990,515,190,34]}
+{"kind":"textbox","id":"sh/3e5snu1c","slide":13,"text":"Tunjukkan CLI terlebih dahulu, lalu UI agar logika sistem dan pengalaman pengguna sama-sama terlihat.","textPreview":"Tunjukkan CLI terlebih dahulu, lalu UI agar logika sistem dan pengalaman pengguna sama-sama terlihat.","textChars":101,"textLines":1,"bbox":[64,630,1152,30]}
+{"kind":"shape","id":"sh/idwbupkr","slide":13,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/5g7ap4j2","slide":13,"text":"Universitas Mercu Buana • UAS NLP","textPreview":"Universitas Mercu Buana • UAS NLP","textChars":33,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/4fytwz2x","slide":13,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/s20lqb","slide":13,"text":"Durasi demo yang disarankan: 3–4 menit dari total video 5–10 menit.\n\n[Sources]\n- Internal demo plan derived from the UAS requirement and implemented flows (accessed 2026-07-27)."}
+{"kind":"slide","id":"sl/6hzxc9","slide":14,"title":"CHATBOT FAQ AKADEMIK","textShapes":16}
+{"kind":"textbox","id":"sh/y94nitgb","slide":14,"text":"CHATBOT FAQ AKADEMIK","textPreview":"CHATBOT FAQ AKADEMIK","textChars":20,"textLines":1,"bbox":[64,36,500,24]}
+{"kind":"textbox","id":"sh/lwfmd8f2","slide":14,"text":"14","textPreview":"14","textChars":2,"textLines":1,"bbox":[1150,30,64,32]}
+{"kind":"textbox","id":"sh/kb65k3yh","slide":14,"text":"Kesimpulan dan pengembangan berikutnya","textPreview":"Kesimpulan dan pengembangan berikutnya","textChars":38,"textLines":1,"bbox":[64,78,1030,64]}
+{"kind":"shape","id":"sh/b6d47exk","slide":14,"bbox":[64,148,1152,0]}
+{"kind":"shape","id":"sh/a543etgf","slide":14,"bbox":[64,184,548,278]}
+{"kind":"textbox","id":"sh/x8vm9ofq","slide":14,"text":"KESIMPULAN","textPreview":"KESIMPULAN","textChars":10,"textLines":1,"bbox":[96,216,160,24]}
+{"kind":"textbox","id":"sh/c7mlgjy5","slide":14,"text":"Chatbot memenuhi seluruh komponen minimum UAS: data, NLP, dialog multi-turn, evaluasi, CLI, UI, dan logging.","textPreview":"Chatbot memenuhi seluruh komponen minimum UAS: data, NLP, dialog multi-turn, evaluasi, CLI, UI, dan logging.","textChars":108,"textLines":1,"bbox":[96,268,444,132]}
+{"kind":"shape","id":"sh/v2h4jix4","slide":14,"bbox":[668,184,548,278]}
+{"kind":"textbox","id":"sh/u1onqdwj","slide":14,"text":"KETERBATASAN","textPreview":"KETERBATASAN","textChars":12,"textLines":1,"bbox":[700,216,160,24]}
+{"kind":"shape","id":"sh/4bmtcn6l","slide":14,"bbox":[700,274,12,12]}
+{"kind":"textbox","id":"sh/5cva5sn6","slide":14,"text":"Dataset masih sintetis dan domain terbatas.","textPreview":"Dataset masih sintetis dan domain terbatas.","textChars":43,"textLines":1,"bbox":[728,266,434,54]}
+{"kind":"shape","id":"sh/i94badov","slide":14,"bbox":[700,332,12,12]}
+{"kind":"textbox","id":"sh/3ads3i5g","slide":14,"text":"Regex belum mencakup semua variasi slot.","textPreview":"Regex belum mencakup semua variasi slot.","textChars":40,"textLines":1,"bbox":[728,324,434,54]}
+{"kind":"shape","id":"sh/g7mt836p","slide":14,"bbox":[700,390,12,12]}
+{"kind":"textbox","id":"sh/h8va18na","slide":14,"text":"Belum terhubung ke sistem akademik resmi.","textPreview":"Belum terhubung ke sistem akademik resmi.","textChars":41,"textLines":1,"bbox":[728,382,434,54]}
+{"kind":"shape","id":"sh/u5kb6toj","slide":14,"bbox":[64,492,1152,118]}
+{"kind":"textbox","id":"sh/v6tszy54","slide":14,"text":"PEMBAGIAN TUGAS","textPreview":"PEMBAGIAN TUGAS","textChars":15,"textLines":1,"bbox":[94,520,150,22]}
+{"kind":"textbox","id":"sh/8329436t","slide":14,"text":"Anggota 1 — dataset & NLP","textPreview":"Anggota 1 — dataset & NLP","textChars":25,"textLines":1,"bbox":[270,516,276,30]}
+{"kind":"textbox","id":"sh/t4bax8ny","slide":14,"text":"Anggota 2 — dialog & pengujian","textPreview":"Anggota 2 — dialog & pengujian","textChars":30,"textLines":1,"bbox":[552,516,310,30]}
+{"kind":"textbox","id":"sh/903q1kf2","slide":14,"text":"Anggota 3 — UI & dokumentasi","textPreview":"Anggota 3 — UI & dokumentasi","textChars":28,"textLines":1,"bbox":[872,516,292,30]}
+{"kind":"textbox","id":"sh/8zu9sfyh","slide":14,"text":"Ganti placeholder nama anggota sebelum pengumpulan.","textPreview":"Ganti placeholder nama anggota sebelum pengumpulan.","textChars":51,"textLines":1,"bbox":[270,560,894,24]}
+{"kind":"shape","id":"sh/nyl8zuxw","slide":14,"bbox":[64,678,1152,0]}
+{"kind":"textbox","id":"sh/mxc7qpgb","slide":14,"text":"Terima kasih • Tanya jawab","textPreview":"Terima kasih • Tanya jawab","textChars":26,"textLines":1,"bbox":[64,688,700,18]}
+{"kind":"textbox","id":"sh/lw3qxkfq","slide":14,"text":"KELOMPOK 3 ORANG","textPreview":"KELOMPOK 3 ORANG","textChars":16,"textLines":1,"bbox":[990,688,226,18]}
+{"kind":"notes","id":"nt/6hzxc9","slide":14,"text":"Penutup: tekankan bahwa 98% adalah hasil data uji internal, bukan klaim produksi.\n\n[Sources]\n- Internal conclusion based on project implementation and test artifacts (accessed 2026-07-27)."}

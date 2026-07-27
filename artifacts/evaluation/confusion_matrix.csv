@@ -1,0 +1,6 @@
+actual_intent,akses_portal,jadwal_ujian,pembayaran_ukt,pendaftaran_krs,syarat_beasiswa
+akses_portal,10,0,0,0,0
+jadwal_ujian,0,10,0,0,0
+pembayaran_ukt,0,0,10,0,0
+pendaftaran_krs,0,0,0,9,1
+syarat_beasiswa,0,0,0,0,10

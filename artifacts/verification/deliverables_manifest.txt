@@ -1,0 +1,28 @@
+Deliverables manifest — 2026-07-27
+
+Required outputs:
+- deliverables/Laporan_Proyek_Chatbot_FAQ_UMB.docx (editable report)
+- deliverables/Laporan_Proyek_Chatbot_FAQ_UMB.pdf (5 pages)
+- deliverables/Presentasi_Chatbot_FAQ_UMB.pptx (14 slides, editable)
+- deliverables/Presentasi_Chatbot_FAQ_UMB.pdf (14 pages)
+- deliverables/LINK_VIDEO.txt (placeholder to be completed by the group)
+
+Applications:
+- cli_app.py
+- ui_app.py
+
+Data and model:
+- dataset_faq.json (250 utterances, 5 intents, balanced)
+- intent_model.pkl
+- db_krs.json (dummy KRS data)
+
+Evaluation evidence:
+- artifacts/evaluation/evaluation_summary.json
+- artifacts/evaluation/classification_report.csv
+- artifacts/evaluation/confusion_matrix.csv
+- artifacts/evaluation/confusion_matrix.png
+- artifacts/evaluation/dataset_distribution.csv
+- artifacts/evaluation/dataset_distribution.png
+- artifacts/evaluation/preprocessing_examples.csv
+- artifacts/evaluation/misclassified_examples.csv
+
